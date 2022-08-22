@@ -15,11 +15,11 @@
         </center>
     </header>
     <nav>
-        <a href="#">¿Quiénes somos?</a>
-        <a href="#">Quiero ser parte</a>
-        <a href="#">Donaciones</a>
-        <a href="#">Puntos de entrega</a>
-        <a href="#">Contacto</a>
+        <a href="#quienes-somos">Quienes somos</a>
+        <a href="#quiero-ser-parte">Quiero ser parte</a>
+        <a href="#donaciones">Donaciones</a>
+        <a href="#puntos-de-entrega">Puntos de entrega</a>
+        <a href="#contacto">Contacto</a>
     </nav>
     <section>
         <!-- Index -->
@@ -34,21 +34,40 @@
         <!-- Donaciones -->
     </section>
     <section>
-        <!-- Puntos de entrega (6) -->
-        <iframe src="" frameborder="0"></iframe>
-        <iframe src="" frameborder="0"></iframe>
-        <iframe src="" frameborder="0"></iframe>
-        <iframe src="" frameborder="0"></iframe>
-        <iframe src="" frameborder="0"></iframe>
-        <iframe src="" frameborder="0"></iframe>
+        <a name="puntos-de-entrega">
+            <h2>Puntos de Entrega</h2>
+        </a>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26278.11553314055!2d-58.41385245497884!3d-34.584826449702774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca99c609fc2f%3A0x392ca99351808a75!2sRecoleta%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1661122633315!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26327.981800815112!2d-58.5933547552552!3d-34.42681290234559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca5a2d0ddb9b1%3A0x2c1a974c67cba1e4!2sTigre%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1661122690377!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26315.55205280617!2d-58.558216455186326!3d-34.46625900168227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb018ceabb369%3A0x7a9866f42bd6d126!2sB%C3%A9ccar%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1661122734275!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
     <section>
-        <!-- Contacto (Formulario) -->
-        <form action="#">
-
+        <a name="contacto">
+            <h2>Contacto</h2>
+        </a>
+        <h3>Déjenos sus consultas o sugerencias</h3>
+        <form action="#" method="post">
+            <fieldset><legend>Datos personales</legend>
+                <label for="firstname">Nombre completo</label>
+                    <input type="text" id="firstname" placeholder="Nombre" required>
+                    <input type="text" id="lastname" placeholder="Apellido" required><br>
+                <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="ejemplo@email.com" required>
+            </fieldset>
+            <fieldset><legend>Mensaje</legend>
+                <label for="subject">Asunto</label>
+                    <select name="subject" id="subject">
+                        <option value="1">Consulta</option>
+                        <option value="2">Sugerencia</option>
+                        <option value="3">Otro</option>
+                    </select><br>
+                <label for="message">Mensaje</label>
+                    <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+            </fieldset>
+            <input type="submit" value="Enviar">
         </form>
     </section>
-    <footer align="center"><br>
+    <footer><br>
         <a href="https://www.instagram.com/tecnosolidaria" target="_blank" style="color: black;"><i class="fa-brands fa-instagram"></i></a>
         <a href="https://www.twitter.com" target="_blank" style="color: black;"><i class="fa-brands fa-twitter"></i></a>
         <a href="https://www.facebook.com" target="_blank" style="color: black;"><i class="fa-brands fa-facebook"></i></a>
