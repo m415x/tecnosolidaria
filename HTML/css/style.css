@@ -42,3 +42,8 @@ i[class^="fa-brands"] { /* Selector de atributos: tipo i con class que comiencen
 footer{ /* Selector de tipo */
     text-align: center;
 }
+
+.form {
+    margin: 20px 100px 20px 100px;
+    font-size: 80%;
+}
