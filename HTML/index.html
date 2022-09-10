@@ -4,50 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/Mano%20tecnosolidaria.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/452988f36c.js" crossorigin="anonymous"></script>
     <title>Tecnosolidaria</title>
 </head>
+
 <body>
-    <header>
-        <img src="img/logo-vectorizado.svg" alt="Logo Tecnosolidaria"> <!--Logo vectorizado (no se pixela al escalarlo)-->
-        <nav>
-            <a href="#">Quienes somos</a>
-            <a href="#">Quiero ser parte</a>
-            <a href="#">Donaciones</a>
+    <header class="cabecera">
+        <a href="#index">
+            <img class="logo" src="img/logo-vectorizado.svg" alt="Logo Tecnosolidaria">
+        </a> <!--Logo vectorizado (no se pixela al escalarlo)-->
+        <nav class="menubar">
+            <a href="#quienes-somos">Quienes somos</a>
+            <a href="#quiero-ser-parte">Quiero ser parte</a>
+            <a href="#donaciones">Donaciones</a>
             <a href="#puntos-de-entrega">Puntos de entrega</a>
             <a href="#contacto">Contacto</a>
         </nav>
     </header>
-    <main>
-        <section>
-            <!-- Index -->
-            <h2>Index</h2>
+
+    <main class="ppal">
+        <section class="index">
+            <a name="index">
+                <h2>Index</h2>
+            </a>
         </section>
-        <section>
-            <!-- Quiénes somos -->
-            <h2>Quienes somos</h2>
+
+        <section class="somos">
+            <a name="quienes-somos">
+                <h2>Quienes somos</h2>
+                <p>Hola! Mi nombre es Santos Bogo. Soy estudiante de ingeniería electrónica y cuento con conocimientos y experiencia en reparación de celulares y computadoras. Estoy iniciando un proyecto que está dedicado a aquellas personas que necesitan equipos tecnológicos pero no tienen los recursos necesarios para adquirirlos... Por eso, si tenés computadoras o celulares que ya no uses o estén rotos, podés colaborar con mi proyecto y contactarte conmigo. Luego de repararlos y dejarlos en las mejores condiciones posibles les encontraremos su nuevo dueño. Todos podemos colaborar poniendo nuestro granito de arena. Aceptamos todo tipo de donaciones.</p>
+                <p>Tecnosolidaria nace con el objetivo de ayudar a todos aquellos chicos que necesitan de dispositivos tecnológicos para no perder la oportunidad de seguir estudiando.
+                <p>Vos podes ser parte de esta iniciativa donando dispositivos rotos o en desuso, como computadoras, tablets y celulares. Nosotros nos encargamos de reacondicionarlo y hacérselo llegar a su nuevo dueño.</p>
+            </a>
         </section>
-        <section>
-            <!-- Quiero ser parte -->
+
+        <section class="serParte">
             <h2>Quiero ser parte</h2>
         </section>
-        <section>
-            <!-- Donaciones -->
+
+        <section class="donaciones">
             <h2>Donaciones</h2>
         </section>
-        <section id="mapas">
+
+        <section class="mapas">
             <a name="puntos-de-entrega"><!--Enlace Ancla-->
                 <h2>Puntos de Entrega</h2>
             </a>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26278.11553314055!2d-58.41385245497884!3d-34.584826449702774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca99c609fc2f%3A0x392ca99351808a75!2sRecoleta%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1661122633315!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26327.981800815112!2d-58.5933547552552!3d-34.42681290234559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca5a2d0ddb9b1%3A0x2c1a974c67cba1e4!2sTigre%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1661122690377!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26315.55205280617!2d-58.558216455186326!3d-34.46625900168227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb018ceabb369%3A0x7a9866f42bd6d126!2sB%C3%A9ccar%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1661122734275!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26278.11553314055!2d-58.41385245497884!3d-34.584826449702774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca99c609fc2f%3A0x392ca99351808a75!2sRecoleta%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1661122633315!5m2!1ses-419!2sar" width="400" height="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
-        <section>
-            <a name="contacto"><!--Enlace Ancla-->
+
+        <section class="contacto">
+            <a name="contacto">
                 <h2>Contacto</h2>
             </a>
             <h3>Déjenos sus consultas o sugerencias</h3>
@@ -77,17 +87,22 @@
             </form>
         </section>
     </main>
-    <aside>
+    
+    <aside class="aparte">
         <h2>Aside</h2>
     </aside>
-    <footer>
-        <a href="https://www.instagram.com/tecnosolidaria" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://api.whatsapp.com/send?phone=543385436162" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-        <a href="https://www.twitter.com" target="_blank" ><i class="fa-brands fa-twitter"></i></a>
-        <a href="https://www.facebook.com" target="_blank" ><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.pinterest.com" target="_blank" ><i class="fa-brands fa-pinterest"></i></a>
-        <a href="https://github.com/santosbogo/tecnosolidaria" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <p>Derechos Reservados &copy; 2022</p>
+    
+    <footer class="pie">
+        <ul>
+            <li><a href="https://www.instagram.com/tecnosolidaria" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=543385436162" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+            <li><a href="https://github.com/santosbogo/tecnosolidaria" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            <!-- <li><a href="https://www.twitter.com" target="_blank" ><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://www.facebook.com" target="_blank" ><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.pinterest.com" target="_blank" ><i class="fa-brands fa-pinterest"></i></a></li> -->
+        </ul>
+        <div class="frase">“Los grandes cambios comienzan con las pequeñas cosas”</div>
+        <div class="copy">2021 -2022 | Copyright | Tecnosolidaria, todos los derechos reservados</div>
     </footer>
 </body>
 </html>

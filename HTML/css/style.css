@@ -1,71 +1,183 @@
-*{ /* Selector universal */
-    margin: 0px;
-    padding: 0px;
+*{
+    margin: 0px; /*Reset margin*/
+    padding: 0px; /*Reset padding*/
     background-color: #0c3674;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Rubik', sans-serif;
     color: #fff;
+    width: 99%;
 }
 
-header{ /* Selector de tipo */
-    text-align: center;
-    margin-bottom: 50px;
+/*Smartphones*/
+@media screen and (max-width: 767px){
+    body{
+        display: grid;
+        grid-template-areas:    "head"
+                                "main"
+                                "aside"
+                                "foot";
+        gap: 10px;
+    }
+    /*HEADER*/
+    .cabecera{
+        grid-area: head;
+        text-align: center;
+    }
+    .logo{
+        width: 82%;
+        padding: 2%;
+    }
+    .menubar a{
+        margin: 5px;
+        padding: 10px;
+        background-color: #add8e611;
+        border-radius: 10px; 
+        text-decoration: none;
+    }
+    /*MAIN*/
+    .ppal{
+        grid-area: main;
+    }
+    section{
+        margin: 20px 10px;
+    }
+    .mapas iframe{
+        margin: 10px 0px;
+        background-color: #add8e611;
+        width: 100%;
+    }
+    .form {
+        margin: 20px 10px 20px 10px;
+        font-size: 80%;
+    }
+    /*ASIDE*/
+    .aparte{
+        grid-area: aside;
+    }
+    /*FOOTER*/
+    .pie{
+        grid-area: foot;
+        text-align: center;
+    }
+    .pie ul{
+        display: flex;
+        list-style: none;
+        font-size: xxx-large;
+        justify-content: center;
+    }
 }
 
-header img{ /*Estilos Logo*/
-    width: 35%;
-    padding: 2%;
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    body{
+        display: grid;
+        grid-template-areas:    "head head head head"
+                                "main main main aside"
+                                "foot foot foot foot ";
+        gap: 10px;
+    }
+    /*HEADER*/
+    .cabecera{
+        grid-area: head;
+        text-align: center;
+    }
+    .logo{
+        width: 82%;
+        padding: 2%;
+    }
+    .menubar a{
+        margin: 5px;
+        padding: 10px;
+        background-color: #add8e611;
+        border-radius: 10px; 
+        text-decoration: none;
+    }
+    /*MAIN*/
+    .ppal{
+        grid-area: main;
+    }
+    section{
+        margin: 20px 10px;
+    }
+    .mapas iframe{
+        margin: 10px 0px;
+        background-color: #add8e611;
+        width: 100%;
+    }
+    .form {
+        margin: 20px 10px 20px 10px;
+        font-size: 80%;
+    }
+    /*ASIDE*/
+    .aparte{
+        grid-area: aside;
+    }
+    /*FOOTER*/
+    .pie{
+        grid-area: foot;
+        text-align: center;
+    }
+    .pie ul{
+        display: flex;
+        list-style: none;
+        font-size: xxx-large;
+        justify-content: center;
+    }
 }
 
-section{ /* Selector de tipo */
-    margin: 30px 5px; /* Margen sup-inf = 30px, margen izq-der = 5px */
-}
-
-a[href^="#"] { /* Selector de atributos: links internos que comiencen con # (links del <nav>) */
-    margin: 5px;
-    padding: 10px;
-    background-color: #add8e611;
-    border-radius: 10px; 
-    text-decoration: none; /* Quita el subrayado de los enlaces */
-}
-
-#mapas iframe{ /* Selector id(#mapas)-tipo(iframe) (mapas de google) */
-    background-color: #add8e611;
-    padding: 10px;
-    width: 20rem;
-    height: 20rem;
-}
-
-i[class^="fa-brands"] { /* Selector de atributos: tipo i con class que comiencen con fa-brands (íconos redes sociales) */
-    font-size: x-large;
-}
-
-footer{ /* Selector de tipo */
-    text-align: center;
-}
-
-.form {
-    margin: 20px 100px 20px 100px;
-    font-size: 80%;
-}
-
-/* MAQUETACION (LUEGO BORRAR)*/
-body{
-    margin: 5px;
-    padding: 5px;
-    border: 1px solid red;
-}
-header, main, aside, footer{
-    margin: 5px;
-    padding: 5px;
-    border: 1px solid yellow;
-}
-header img, nav{
-    margin: 5px;
-    padding: 5px;
-    border: 1px solid lightgreen;
-}
-section{
-    margin: 5px;
-    padding: 5px;
-    border: 1px solid lightgreen;
+/*Desktop*/
+@media screen and (min-width: 1024px){
+    body{
+        display: grid;
+        grid-template-areas:    "head head head head head head"
+                                "main main main main aside aside"
+                                "foot foot foot foot foot foot";
+        gap: 10px;
+    }
+    /*HEADER*/
+    .cabecera{
+        grid-area: head;
+        text-align: center;
+    }
+    .logo{
+        width: 82%;
+        padding: 2%;
+    }
+    .menubar a{
+        margin: 5px;
+        padding: 10px;
+        background-color: #add8e611;
+        border-radius: 10px; 
+        text-decoration: none;
+    }
+    /*MAIN*/
+    .ppal{
+        grid-area: main;
+    }
+    section{
+        margin: 20px 10px;
+    }
+    .mapas iframe{
+        margin: 10px 0px;
+        background-color: #add8e611;
+        width: 100%;
+    }
+    .form {
+        margin: 20px 10px 20px 10px;
+        font-size: 80%;
+    }
+    /*ASIDE*/
+    .aparte{
+        grid-area: aside;
+    }
+    /*FOOTER*/
+    .pie{
+        grid-area: foot;
+        text-align: center;
+    }
+    .pie ul{
+        display: flex;
+        list-style: none;
+        font-size: xxx-large;
+        justify-content: center;
+    }
 }
