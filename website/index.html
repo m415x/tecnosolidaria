@@ -2,9 +2,9 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="img/Mano%20tecnosolidaria.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/mano-tecnosolidaria.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/452988f36c.js" crossorigin="anonymous"></script>
@@ -15,7 +15,7 @@
     <header class="cabecera">
         <a href="#index">
             <img class="logo" src="img/logo-vectorizado.svg" alt="Logo Tecnosolidaria">
-        </a> <!--Logo vectorizado (no se pixela al escalarlo)-->
+        </a>
         <nav class="menubar">
             <a href="#quienes-somos">Quienes somos</a>
             <a href="#quiero-ser-parte">Quiero ser parte</a>
@@ -27,18 +27,18 @@
 
     <main class="ppal">
         <section class="index">
-            <a name="index">
+            <a id="index">
                 <h2>Index</h2>
             </a>
         </section>
 
         <section class="somos">
-            <a name="quienes-somos">
+            <a id="quienes-somos">
                 <h2>Quienes somos</h2>
+            </a>
                 <p>Hola! Mi nombre es Santos Bogo. Soy estudiante de ingeniería electrónica y cuento con conocimientos y experiencia en reparación de celulares y computadoras. Estoy iniciando un proyecto que está dedicado a aquellas personas que necesitan equipos tecnológicos pero no tienen los recursos necesarios para adquirirlos... Por eso, si tenés computadoras o celulares que ya no uses o estén rotos, podés colaborar con mi proyecto y contactarte conmigo. Luego de repararlos y dejarlos en las mejores condiciones posibles les encontraremos su nuevo dueño. Todos podemos colaborar poniendo nuestro granito de arena. Aceptamos todo tipo de donaciones.</p>
                 <p>Tecnosolidaria nace con el objetivo de ayudar a todos aquellos chicos que necesitan de dispositivos tecnológicos para no perder la oportunidad de seguir estudiando.
                 <p>Vos podes ser parte de esta iniciativa donando dispositivos rotos o en desuso, como computadoras, tablets y celulares. Nosotros nos encargamos de reacondicionarlo y hacérselo llegar a su nuevo dueño.</p>
-            </a>
         </section>
 
         <section class="serParte">
@@ -50,14 +50,14 @@
         </section>
 
         <section class="mapas">
-            <a name="puntos-de-entrega"><!--Enlace Ancla-->
+            <a id="puntos-de-entrega"><!--Enlace Ancla-->
                 <h2>Puntos de Entrega</h2>
             </a>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26278.11553314055!2d-58.41385245497884!3d-34.584826449702774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca99c609fc2f%3A0x392ca99351808a75!2sRecoleta%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1661122633315!5m2!1ses-419!2sar" width="400" height="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
 
         <section class="contacto">
-            <a name="contacto">
+            <a id="contacto">
                 <h2>Contacto</h2>
             </a>
             <h3>Déjenos sus consultas o sugerencias</h3>
@@ -79,9 +79,9 @@
                         </select><br>
                     <label for="message">Mensaje</label>
                         <textarea name="message" id="message" cols="120" rows="3" maxlength="300" placeholder="Máximo 300 caracteres" required></textarea>
-                    <label for="subscription"></label>
-                        <input type="checkbox" checked> Quiero recibir novedades sobre Tecnosolidaria
                 </fieldset>
+                <label for="subscription"></label>
+                        <input type="checkbox" id="subscription" checked> Quiero recibir novedades sobre Tecnosolidaria
                 <br>
                 <input type="submit" value="Enviar">
             </form>
