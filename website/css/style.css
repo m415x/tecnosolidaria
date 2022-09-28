@@ -1,376 +1,425 @@
-*{
-    margin: 0px; /*Reset margin*/
-    padding: 0px; /*Reset padding*/
-    background-color: #0c3674;
-    font-family: 'Rubik', sans-serif;
-    color: #fff;
-    width: 99%;
+* {
+  margin: 0px; /*Reset margin*/
+  padding: 0px; /*Reset padding*/
+  box-sizing: border-box;
+  background-color: #0c3674;
+  font-family: "Rubik", sans-serif;
+  color: #fff;
+  width: 99%;
 }
 
 /*Smartphones*/
-@media screen and (max-width: 767px){
-    body{
-        display: grid;
-        grid-template-areas:    "head"
-                                "main"
-                                "aside"
-                                "foot";
-        gap: 10px;
-    }
-    /*HEADER*/
-    .cabecera{
-        grid-area: head;
-        text-align: center;
-    }
-    .logo{
-        width: 82%;
-        padding: 2%;
-    }
-    .menubar a{
-        margin: 5px;
-        padding: 10px;
-        background-color: #add8e611;
-        border-radius: 10px; 
-        text-decoration: none;
-    }
-    /*MAIN*/
-    .ppal{
-        grid-area: main;
-    }
-    section{
-        margin: 20px 10px;
-    }
-    .mapas iframe{
-        margin: 10px 0px;
-        background-color: #add8e611;
-        width: 100%;
-    }
-    .form {
-        margin: 20px 10px 20px 10px;
-        font-size: 80%;
-    }
-    /*ASIDE*/
-    .aparte{
-        grid-area: aside;
-    }
-    /*FOOTER*/
-    .pie{
-        grid-area: foot;
-        text-align: center;
-    }
-    .pie ul{
-        display: flex;
-        list-style: none;
-        font-size: xxx-large;
-        justify-content: center;
-    }
+@media screen and (max-width: 767px) {
+  body {
+    display: grid;
+    grid-template-areas:
+      "head"
+      "main"
+      "aside"
+      "foot";
+    gap: 10px;
+  }
+  /*HEADER*/
+  .cabecera {
+    grid-area: head;
+    text-align: center;
+  }
+  .logo {
+    width: 82%;
+    padding: 2%;
+  }
+  .menubar a {
+    margin: 5px;
+    padding: 10px;
+    background-color: #add8e611;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+  /*MAIN*/
+  .ppal {
+    grid-area: main;
+  }
+  section {
+    margin: 20px 10px;
+  }
+  .mapas iframe {
+    margin: 10px 0px;
+    background-color: #add8e611;
+    width: 100%;
+  }
+  .form {
+    margin: 20px 10px 20px 10px;
+    font-size: 80%;
+  }
+  /*ASIDE*/
+  .aparte {
+    grid-area: aside;
+  }
+  /*FOOTER*/
+  .pie {
+    grid-area: foot;
+    text-align: center;
+  }
+  .pie ul {
+    display: flex;
+    list-style: none;
+    font-size: xxx-large;
+    justify-content: center;
+  }
 }
 
 /*Tablet*/
-@media screen and (min-width: 768px) and (max-width: 1023px){
-    body{
-        display: grid;
-        grid-template-areas:    "head head head head"
-                                "main main main aside"
-                                "foot foot foot foot ";
-        gap: 10px;
-    }
-    /*HEADER*/
-    .cabecera{
-        grid-area: head;
-        text-align: center;
-    }
-    .logo{
-        width: 82%;
-        padding: 2%;
-    }
-    .menubar a{
-        margin: 5px;
-        padding: 10px;
-        background-color: #add8e611;
-        border-radius: 10px; 
-        text-decoration: none;
-    }
-    /*MAIN*/
-    .ppal{
-        grid-area: main;
-    }
-    section{
-        margin: 20px 10px;
-    }
-    .mapas iframe{
-        margin: 10px 0px;
-        background-color: #add8e611;
-        width: 100%;
-    }
-    .form {
-        margin: 20px 10px 20px 10px;
-        font-size: 80%;
-    }
-    /*ASIDE*/
-    .aparte{
-        grid-area: aside;
-    }
-    /*FOOTER*/
-    .pie{
-        grid-area: foot;
-        text-align: center;
-    }
-    .pie ul{
-        display: flex;
-        list-style: none;
-        font-size: xxx-large;
-        justify-content: center;
-    }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    display: grid;
+    grid-template-areas:
+      "head head head head"
+      "main main main aside"
+      "foot foot foot foot ";
+    gap: 10px;
+  }
+  /*HEADER*/
+  .cabecera {
+    grid-area: head;
+    text-align: center;
+  }
+  .logo {
+    width: 82%;
+    padding: 2%;
+  }
+  .menubar a {
+    margin: 5px;
+    padding: 10px;
+    background-color: #add8e611;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+  /*MAIN*/
+  .ppal {
+    grid-area: main;
+  }
+  section {
+    margin: 20px 10px;
+  }
+  .mapas iframe {
+    margin: 10px 0px;
+    background-color: #add8e611;
+    width: 100%;
+  }
+  .form {
+    margin: 20px 10px 20px 10px;
+    font-size: 80%;
+  }
+  /*ASIDE*/
+  .aparte {
+    grid-area: aside;
+  }
+  /*FOOTER*/
+  .pie {
+    grid-area: foot;
+    text-align: center;
+  }
+  .pie ul {
+    display: flex;
+    list-style: none;
+    font-size: xxx-large;
+    justify-content: center;
+  }
 }
 
 /*Desktop*/
-@media screen and (min-width: 1024px){
-    body{
-        display: grid;
-        grid-template-areas:    "head head head head head head"
-                                "main main main main aside aside"
-                                "foot foot foot foot foot foot";
-        gap: 10px;
-    }
-    /*HEADER*/
-    .cabecera{
-        grid-area: head;
-        text-align: center;
-    }
-    .logo{
-        width: 82%;
-        padding: 2%;
-    }
-    .menubar a{
-        margin: 5px;
-        padding: 10px;
-        background-color: #add8e611;
-        border-radius: 10px; 
-        text-decoration: none;
-    }
-    /*MAIN*/
-    .ppal{
-        grid-area: main;
-    }
-    section{
-        margin: 20px 10px;
-    }
-    .mapas iframe{
-        margin: 10px 0px;
-        background-color: #add8e611;
-        width: 100%;
-    }
-    .form {
-        margin: 20px 10px 20px 10px;
-        font-size: 80%;
-    }
-    /*ASIDE*/
-    .aparte{
-        grid-area: aside;
-    }
-    /*FOOTER*/
-    .pie{
-        grid-area: foot;
-        text-align: center;
-    }
-    .pie ul{
-        display: flex;
-        list-style: none;
-        font-size: xxx-large;
-        justify-content: center;
-    }
+@media screen and (min-width: 1024px) {
+  body {
+    display: grid;
+    grid-template-areas:
+      "head head head head head head"
+      "main main main main aside aside"
+      "foot foot foot foot foot foot";
+    gap: 10px;
+  }
+  /*HEADER*/
+  .cabecera {
+    grid-area: head;
+    text-align: center;
+  }
+  .logo {
+    width: 82%;
+    padding: 2%;
+  }
+  .menubar a {
+    margin: 5px;
+    padding: 10px;
+    background-color: #add8e611;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+  /*MAIN*/
+  .ppal {
+    grid-area: main;
+  }
+  section {
+    margin: 20px 10px;
+  }
+  .mapas iframe {
+    margin: 10px 0px;
+    background-color: #add8e611;
+    width: 100%;
+  }
+  .form {
+    margin: 20px 10px 20px 10px;
+    font-size: 80%;
+  }
+  /*ASIDE*/
+  .aparte {
+    grid-area: aside;
+  }
+  /*FOOTER*/
+  .pie {
+    grid-area: foot;
+    text-align: center;
+  }
+  .pie ul {
+    display: flex;
+    list-style: none;
+    font-size: xxx-large;
+    justify-content: center;
+  }
 }
 
 
+/* *FORMULARIO* */
 
-
-
-
-*, ::after, ::before {
-    box-sizing: border-box;
-}
+/*
+::after,
+::before {
+  box-sizing: border-box;
+} */
 
 @keyframes slide-up2 {
-    0% {
-        transform: translateY(.5em);
-        opacity: 0;
-    }
-    100%{
-        transform: translateY(0);
-        opacity: 1;
-    }
+  0% {
+    transform: translateY(0.5em);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @keyframes glow-load {
-    0% {
-        box-shadow: none;
-    }
-    100%{
-        box-shadow:
-        0px 0px 50px #f0860c;
-    }
+  0% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 0px 0px 50px #F29335;
+  }
 }
 
 @keyframes continuous-glow {
-    0% {
-        box-shadow: 0 0 5px rgba(255, 157, 9, 0.39), inset 0 0 5px rgba(255, 153, 0, 0.356), 0 2px 0 #000;
-    }	
-    100% {
-        box-shadow: 0 0 20px rgba(255, 153, 0, 0.6), inset 0 0 10px rgba(255, 145, 0, 0.4), 0 2px 0 #000;
-    }
+  0% {
+    box-shadow: 0 0 5px rgba(255, 157, 9, 0.39),
+      inset 0 0 5px rgba(255, 153, 0, 0.356), 0 2px 0 #000;
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(255, 153, 0, 0.6),
+      inset 0 0 10px rgba(255, 145, 0, 0.4), 0 2px 0 #000;
+  }
 }
 
 @keyframes blur-load {
-    0% {
-        opacity: 0;
-        filter:blur(0.2em);
-    }
-    100%{
-        opacity: 1;
-        filter:blur(0);
-    }
+  0% {
+    opacity: 0;
+    filter: blur(0.2em);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
 }
 
 .contacto {
-    margin: auto;
-    width: 90%;
+  margin: auto;
+  width: 90%;
 }
 
-.form-item, .textarea-div {
-    opacity: 0;
+.form-item,
+.textarea-div {
+  opacity: 0;
 }
 
 .form-item1 {
-    animation: .2s cubic-bezier(0.47, 0, 0.745, 0.715) .3s 1 slide-up2 ;
-    animation-fill-mode: forwards;
+  animation: 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 0.3s 1 slide-up2;
+  animation-fill-mode: forwards;
 }
 
 .form-item2 {
-    animation: .2s cubic-bezier(0.47, 0, 0.745, 0.715) .4s 1 slide-up2 ;
-    animation-fill-mode: forwards;
+  animation: 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 0.4s 1 slide-up2;
+  animation-fill-mode: forwards;
 }
 
 .form-item3 {
-    animation: .2s cubic-bezier(0.47, 0, 0.745, 0.715) .5s 1 slide-up2 ;
-    animation-fill-mode: forwards;
+  animation: 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 0.5s 1 slide-up2;
+  animation-fill-mode: forwards;
 }
 
 .form-item4 {
-    animation: .2s cubic-bezier(0.47, 0, 0.745, 0.715) .6s 1 slide-up2 ;
-    animation-fill-mode: forwards;
+  animation: 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 0.6s 1 slide-up2;
+  animation-fill-mode: forwards;
 }
 
 .contacto form {
-    background-color: #0c3674;
-    border-radius: 1.25em;
-    padding: 1.5em;
-    animation: 1s cubic-bezier(0.47, 0, 0.745, 0.715) .7s 1 glow-load;
-    animation-fill-mode: forwards;
+  background-color: #0c3674;
+  border-radius: 1.25em;
+  padding: 1.5em;
+  animation: 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.7s 1 glow-load;
+  animation-fill-mode: forwards;
 }
 
 .contacto form label {
-    color: rgb(191, 191, 191);
+  color: #E1E1E1;
 }
 
-.contacto option, .contacto select, .contacto input, .textarea-div textarea {
-    background: #1b1a1a;
-    color: rgb(255, 229, 195);
+.contacto option,
+.contacto select,
+.contacto input,
+.textarea-div textarea {
+  background: #1b1a1a;
+  color: #ffe5c3;
 }
 
 .form-header {
-    text-align: center;
-    font-size: 28px;
-    padding: 0;
-    margin-bottom: 1.25em;
-    color: #fff;
+  text-align: center;
+  font-size: 28px;
+  padding: 0;
+  margin-bottom: 1.25em;
+  color: #E1E1E1;
 }
 
 .contacto label {
-    display: block;
-    margin-bottom: 0.35em;
-    margin-top: 0.35em;
+  display: block;
+  margin-bottom: 0.35em;
+  margin-top: 0.35em;
 }
 
-.contacto input:not(.btn), .contacto select {
-    padding: 0.625em 1em;
-    width: 100%;
-    outline: 0;
-    margin-bottom: 1.25em;
-    border-radius: 1.25em;
-    border: 0;
+.contacto input:not(.btn),
+.contacto select {
+  padding: 0.625em 1em;
+  width: 100%;
+  outline: 0;
+  margin-bottom: 1.25em;
+  border-radius: 1.25em;
+  border: 0;
 }
 
 .textarea-div {
-    width: 100%;
+  width: 100%;
 }
 
 .contacto textarea {
-    padding: 10px;
-    width: 100%;
-    outline: 0;
-    margin-bottom: 20px;
-    border-radius: 20px;
-    border: 0;
-    font-size: 14px;
-    height: 100px;
-    resize: vertical;
+  padding: 10px;
+  width: 100%;
+  outline: 0;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  border: 0;
+  font-size: 14px;
+  height: 100px;
+  resize: vertical;
+}
+
+/* SUBSCRIPCION NEWSLETTER (.subscription) */
+.subscription-div input[type="checkbox"] + label:before {
+	content: "";
+	width: 26px;
+	height: 26px;
+	float: left;
+	margin: 0.5em 0.5em;
+  border-radius: 10px;
+	background: #1b1a1a;
+}
+.subscription-div input[type="checkbox"]:checked + label:before {
+	border-color: #F29335;
+}
+.subscription-div input[type="checkbox"]:checked + label:after {
+    content: "";
+    width: 12px;
+    height: 6px;
+    border: 4px solid #F29335;
+    float: left;
+    margin-left: -1.95em;
+    border-right: 0;
+    border-top: 0;
+    margin-top: 1em;
+    transform: rotate(-55deg);
+}
+.subscription-div input[type="checkbox"] {
+	display: none;
+}
+.subscription-div input[type="checkbox"] + label {
+    font-weight: bold;
+    line-height: 3em;
+    color: #E1E1E1;
+}
+.subscription-div input[type="checkbox"]:checked + label {
+    color: #F29335;
 }
 
 .btn-container {
-    margin: auto;
-    padding-bottom: 1em;
+  margin: auto;
+  padding-bottom: 1em;
 }
 
-.form-btn { 
-    background: rgb(12, 12, 12) ;
-    border: none ;
-    margin-top: 1em ;
-    font-size: 20px;
-    padding: .5em;
+.form-btn {
+  background: #0c0c0c;
+  border: none;
+  margin-top: 1em;
+  font-size: 20px;
+  padding: 0.5em;
 }
 
 .btn-glow {
-    animation: .5s ease-out 0s 1 blur-load;
-    border-radius: 2em ;
-    color: white ;
-    transition:.4s ;
+  animation: 0.5s ease-out 0s 1 blur-load;
+  border-radius: 2em;
+  color: #E1E1E1;
+  transition: 0.4s;
 }
 
 .btn-glow:hover {
-    box-shadow: 0px 0px 10px #f0860c;
+  box-shadow: 0px 0px 10px #F29335;
 }
 
-.form-btn:hover { 
-    background: #f0860c ;
+.form-btn:hover {
+  background: #F29335;
 }
 
-.contacto input:focus, .contacto select:focus, .contacto textarea:focus  {
-    animation: continuous-glow 800ms ease-out infinite alternate;
-    box-shadow: 0 0 5px #f0860c, inset 0 0 5px #f0860c, 0 2px 0 #000;
-    color: rgb(255, 229, 195);
+.contacto input:focus,
+.contacto select:focus,
+.contacto textarea:focus {
+  animation: continuous-glow 800ms ease-out infinite alternate;
+  box-shadow: 0 0 5px #F29335, inset 0 0 5px #F29335, 0 2px 0 #000;
+  color: #ffe5c3;
 }
 
 @media only screen and (min-width: 572px) {
-    .form {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
-    .form-item {
-        width: 45%;
-    }
+  .form-item {
+    width: 45%;
+  }
 
-    .contacto {
-        padding: 5em 0;
-        width: 80%;
-    }
+  .contacto {
+    padding: 5em 0;
+    width: 80%;
+  }
 }
 
 @media only screen and (min-width: 970px) {
-    .contacto {
-        padding: 8em 0;
-        width: 70%;
-    }
+  .contacto {
+    padding: 8em 0;
+    width: 70%;
+  }
 }

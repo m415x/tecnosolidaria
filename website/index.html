@@ -58,7 +58,9 @@
 
         <section class="contacto">
             <form class="formulario" action="#" method="post">
-                <h2 class="form-header">Contacto</h2>
+                <a id="contacto">
+                    <h2 class="form-header">Contacto</h2>
+                </a>
                 <div class="form">
                     <div class="form-item form-item1">
                         <label for="firstname">Nombre <sup>*</sup></label>
@@ -74,7 +76,7 @@
                     </div>
                     <div class="form-item form-item2">
                         <label for="phonenumber">Teléfono</label>
-                        <input id="phonenumber" type="tel"name="phonenumber"/>
+                        <input id="phonenumber" type="tel"name="phonenumber" placeholder="+54 11 5 1234567"/>
                     </div>
                     <div class="form-item form-item3">
                         <label for="subject">Asunto</label>
@@ -84,7 +86,7 @@
                             <option value="3">Otro</option>
                         </select>
                     </div>
-                    <div class="form-item form-item3">
+                    <div class="form-item form-item3"> <!--Que aparezca cuando seleccionemos la opción Otro en asunto con JS-->
                         <label for="subject-other">Otro</label>
                         <input for="subject-other" type="text" name="subject" required/>
                     </div>
@@ -92,9 +94,11 @@
                         <label for="message">Mensaje <sup>*</sup></label>
                         <textarea id="message" type="text" name="message" maxlength="300" placeholder="Máximo 300 caracteres" required></textarea>
                     </div>
-                    <div>
-                        <label for="subscription"><input type="checkbox" id="subscription" checked> Quiero recibir novedades sobre Tecnosolidaria</label>
+                    <div class="subscription-div form-item4">
+                        <input type="checkbox" id="subscription" value="subscription" checked>
+                        <label for="subscription">Quiero recibir novedades sobre Tecnosolidaria</label>
                     </div>
+
                     <div class="btn-container">
                         <input id="submit" class="btn btn-glow form-btn" type="submit" name="submit" value="Enviar"/>
                     </div>
