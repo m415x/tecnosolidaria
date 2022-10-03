@@ -1,126 +1,149 @@
 <!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="img/mano-tecnosolidaria.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/452988f36c.js" crossorigin="anonymous"></script>
-    <title>Tecnosolidaria</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="img/mano-tecnosolidaria.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/452988f36c.js" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+  <title>Tecnosolidaria</title>
 </head>
-
 <body>
-    <header class="cabecera">
-        <a href="#index">
-            <img class="logo" src="img/logo-vectorizado.svg" alt="Logo Tecnosolidaria">
-        </a>
-        <nav class="menubar">
-            <a href="#quienes-somos">Quienes somos</a>
-            <a href="#quiero-ser-parte">Quiero ser parte</a>
-            <a href="#donaciones">Donaciones</a>
-            <a href="#puntos-de-entrega">Puntos de entrega</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
-    </header>
 
-    <main class="ppal">
-        <section class="index">
-            <a id="index">
-                <h2>Index</h2>
-            </a>
-        </section>
 
-        <section class="somos">
-            <a id="quienes-somos">
-                <h2>Quienes somos</h2>
-            </a>
-                <p>Hola! Mi nombre es Santos Bogo. Soy estudiante de ingeniería electrónica y cuento con conocimientos y experiencia en reparación de celulares y computadoras. Estoy iniciando un proyecto que está dedicado a aquellas personas que necesitan equipos tecnológicos pero no tienen los recursos necesarios para adquirirlos... Por eso, si tenés computadoras o celulares que ya no uses o estén rotos, podés colaborar con mi proyecto y contactarte conmigo. Luego de repararlos y dejarlos en las mejores condiciones posibles les encontraremos su nuevo dueño. Todos podemos colaborar poniendo nuestro granito de arena. Aceptamos todo tipo de donaciones.</p>
-                <p>Tecnosolidaria nace con el objetivo de ayudar a todos aquellos chicos que necesitan de dispositivos tecnológicos para no perder la oportunidad de seguir estudiando.
-                <p>Vos podes ser parte de esta iniciativa donando dispositivos rotos o en desuso, como computadoras, tablets y celulares. Nosotros nos encargamos de reacondicionarlo y hacérselo llegar a su nuevo dueño.</p>
-        </section>
+  <!-- *HEADER* -->
 
-        <section class="serParte">
-            <h2>Quiero ser parte</h2>
-        </section>
+  <header class="header">
+    <a href="#index">
+      <img class="logo" src="img/logo-vectorizado.svg" alt="Logo Tecnosolidaria">
+    </a>
+    <nav class="menubar">
+      <a href="#quienes-somos">Quienes somos</a>
+      <a href="#quiero-ser-parte">Quiero ser parte</a>
+      <a href="#donaciones">Donaciones</a>
+      <a href="#puntos-de-entrega">Puntos de entrega</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
 
-        <section class="donaciones">
-            <h2>Donaciones</h2>
-        </section>
 
-        <section class="mapas">
-            <a id="puntos-de-entrega"><!--Enlace Ancla-->
-                <h2>Puntos de Entrega</h2>
-            </a>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26278.11553314055!2d-58.41385245497884!3d-34.584826449702774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca99c609fc2f%3A0x392ca99351808a75!2sRecoleta%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1661122633315!5m2!1ses-419!2sar" width="400" height="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
+  <!-- *INDEX* -->
 
-        <section class="contacto">
-            <form class="formulario" action="#" method="post">
-                <a id="contacto">
-                    <h2 class="form-header">Contacto</h2>
-                </a>
-                <div class="form">
-                    <div class="form-item form-item1">
-                        <label for="firstname">Nombre <sup>*</sup></label>
-                        <input id="firstname" type="text" name="firstname" placeholder="Tu nombre" required/>
-                    </div>
-                    <div class="form-item form-item1">
-                        <label for="lastname">Apellido <sup>*</sup></label>
-                        <input for="lastname" type="text" name="lastname" placeholder="Tu apellido" required/>
-                    </div>
-                    <div class="form-item form-item2">
-                        <label for="email">Email <sup>*</sup></label>
-                        <input id="email" type="email" name="email" placeholder="ejemplo@email.com" required/>
-                    </div>
-                    <div class="form-item form-item2">
-                        <label for="phonenumber">Teléfono</label>
-                        <input id="phonenumber" type="tel"name="phonenumber" placeholder="+54 11 5 1234567"/>
-                    </div>
-                    <div class="form-item form-item3">
-                        <label for="subject">Asunto</label>
-                        <select name="subject" id="subject">
-                            <option value="1">Consulta</option>
-                            <option value="2">Sugerencia</option>
-                            <option value="3">Otro</option>
-                        </select>
-                    </div>
-                    <div class="form-item form-item3"> <!--Que aparezca cuando seleccionemos la opción Otro en asunto con JS-->
-                        <label for="subject-other">Otro</label>
-                        <input for="subject-other" type="text" name="subject" required/>
-                    </div>
-                    <div class="textarea-div form-item4">
-                        <label for="message">Mensaje <sup>*</sup></label>
-                        <textarea id="message" type="text" name="message" maxlength="300" placeholder="Máximo 300 caracteres" required></textarea>
-                    </div>
-                    <div class="subscription-div form-item4">
-                        <input type="checkbox" id="subscription" value="subscription" checked>
-                        <label for="subscription">Quiero recibir novedades sobre Tecnosolidaria</label>
-                    </div>
+  <section id="index" class="index">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A ducimus expedita similique voluptates eligendi vero, ratione magnam eum quod nulla obcaecati qui adipisci quidem voluptas dicta accusamus esse maxime labore minima beatae perferendis. Nesciunt, assumenda earum vel laudantium consequuntur asperiores, in delectus nihil ratione ullam accusantium maxime ex placeat cupiditate labore omnis odit aliquid distinctio, reiciendis nisi nemo? Eius voluptatibus obcaecati doloremque provident, fuga, perferendis eos facilis mollitia repellat eligendi nisi placeat, reprehenderit nihil fugiat assumenda velit aperiam voluptates iusto odio? Neque nobis dolorem excepturi quaerat, suscipit voluptatibus animi repellat cum vero vel, nulla quo illum ducimus, reiciendis magnam tenetur.</p>
+  </section>
 
-                    <div class="btn-container">
-                        <input id="submit" class="btn btn-glow form-btn" type="submit" name="submit" value="Enviar"/>
-                    </div>
-                </div>
-            </form>
-        </section>
-    
-    <aside class="aparte">
-        <h2>Aside</h2>
-    </aside>
-    
-    <footer class="pie">
-        <ul>
-            <li><a href="https://www.instagram.com/tecnosolidaria" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="https://api.whatsapp.com/send?phone=543385436162" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
-            <li><a href="https://github.com/santosbogo/tecnosolidaria" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-            <!-- <li><a href="https://www.twitter.com" target="_blank" ><i class="fa-brands fa-twitter"></i></a></li>
-            <li><a href="https://www.facebook.com" target="_blank" ><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="https://www.pinterest.com" target="_blank" ><i class="fa-brands fa-pinterest"></i></a></li> -->
-        </ul>
-        <div class="frase">“Los grandes cambios comienzan con las pequeñas cosas”</div>
-        <div class="copy">2021 -2022 | Copyright | Tecnosolidaria, todos los derechos reservados</div>
-    </footer>
+
+  <!-- *QUIENES SOMOS* -->
+
+  <h2 id="quienes-somos" class="about-h2">Quienes somos</h2>
+  <section class="about-cont">
+    <p>Hola! Mi nombre es Santos Bogo. Soy estudiante de ingeniería electrónica y cuento con conocimientos y
+      experiencia en reparación de celulares y computadoras. Estoy iniciando un proyecto que está dedicado a
+      aquellas personas que necesitan equipos tecnológicos pero no tienen los recursos necesarios para
+      adquirirlos... Por eso, si tenés computadoras o celulares que ya no uses o estén rotos, podés colaborar
+      con mi proyecto y contactarte conmigo. Luego de repararlos y dejarlos en las mejores condiciones
+      posibles les encontraremos su nuevo dueño. Todos podemos colaborar poniendo nuestro granito de arena.
+      Aceptamos todo tipo de donaciones.</p>
+    <p>Tecnosolidaria nace con el objetivo de ayudar a todos aquellos chicos que necesitan de dispositivos
+      tecnológicos para no perder la oportunidad de seguir estudiando.
+    <p>Vos podes ser parte de esta iniciativa donando dispositivos rotos o en desuso, como computadoras, tablets
+      y celulares. Nosotros nos encargamos de reacondicionarlo y hacérselo llegar a su nuevo dueño.</p>
+  </section>
+
+
+  <!-- *QUIERO SER PARTE* -->
+  
+  <h2 id="quiero-ser-parte" class="part-h2">Quiero ser parte</h2>
+  <section class="part-cont">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio doloribus ipsa architecto quis tempore, voluptatibus nisi ea ad voluptas iure quia consectetur alias praesentium possimus et illo autem dolores. Cumque voluptatum deserunt vero assumenda architecto corrupti cupiditate doloribus. Laudantium hic laboriosam facere autem ipsum accusamus doloremque nemo eveniet tempora. Necessitatibus.
+    </p>
+  </section>
+
+
+  <!-- *DONACIONES* -->
+
+  <h2 id="donaciones" class="donate-h2">Donaciones</h2>
+  <section class="donate-cont">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident saepe accusamus sit, commodi officia dolores vel ratione neque quos ad tempore minima asperiores, recusandae doloribus obcaecati praesentium ducimus! Quibusdam, blanditiis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, in deleniti! Sunt suscipit in culpa repellat voluptate adipisci, quam accusamus vel excepturi eveniet ullam deserunt veritatis debitis quidem quaerat optio doloremque id repudiandae, corrupti officia, temporibus mollitia. Consectetur exercitationem autem nisi obcaecati magni necessitatibus alias quas, dolor molestiae illum error corrupti pariatur dolorem esse deserunt perferendis harum reiciendis officia amet dolorum? Possimus, nulla iure, quisquam dolorem quas, porro provident recusandae suscipit ipsam magnam veritatis perspiciatis ducimus quibusdam ipsum neque perferendis cum atque quo beatae rerum? Adipisci, autem quaerat? Vero explicabo doloribus eius at possimus. Officia explicabo culpa dignissimos hic soluta delectus nisi, labore ea, vel odit voluptatibus a necessitatibus aspernatur aperiam fugit magnam eaque quis fugiat repellendus sit! Expedita aliquid sint excepturi, dolorem praesentium consectetur incidunt dolores odio, accusantium tempora id, libero deserunt voluptate recusandae ipsam? Amet, numquam aspernatur, quasi deserunt assumenda eveniet est ipsam quibusdam soluta suscipit minus vitae in blanditiis, doloribus quae tenetur eligendi eaque. At, quis! Amet neque consequatur maxime magni expedita cumque ex commodi dolor nobis odio libero molestiae harum unde, dolores impedit quam magnam architecto. Ducimus commodi, sequi eos fugit totam, placeat nemo fugiat at sunt facilis ex iusto, nesciunt rerum cumque illum atque exercitationem!
+    </p>
+  </section>
+
+
+  <!-- *PUNTOS DE ENTREGA* -->
+
+  <h2 id="puntos-de-entrega" class="points-h2">Puntos de Entrega</h2>
+  <section class="points-cont">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26278.11553314055!2d-58.41385245497884!3d-34.584826449702774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca99c609fc2f%3A0x392ca99351808a75!2sRecoleta%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1661122633315!5m2!1ses-419!2sar"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+
+  <!-- *FORMULARIO DE CONTACTO* -->
+
+  <h2 id="contacto" class="form-h2">Contacto</h2>
+  <section class="contacto form-cont" >
+    <form class="form" action="#" method="post">
+      <div class="form-item form-item1">
+        <label for="firstname">Nombre <sup>*</sup></label>
+        <input id="firstname" type="text" name="firstname" placeholder="Tu nombre" required>
+      </div>
+      <div class="form-item form-item1">
+        <label for="lastname">Apellido <sup>*</sup></label>
+        <input for="lastname" type="text" name="lastname" placeholder="Tu apellido" required>
+      </div>
+      <div class="form-item form-item2">
+        <label for="email">Email <sup>*</sup></label>
+        <input id="email" type="email" name="email" placeholder="ejemplo@email.com" required>
+      </div>
+      <div class="form-item form-item2">
+        <label for="phonenumber">Teléfono</label>
+        <input id="phonenumber" type="tel" name="phonenumber" placeholder="+54 11 5 1234567">
+      </div>
+      <div class="form-item form-item3">
+        <label for="subject">Asunto</label>
+        <select name="subject" id="subject">
+          <option value="1">Consulta</option>
+          <option value="2">Sugerencia</option>
+          <option value="3">Otro</option>
+        </select>
+      </div>
+      <div class="form-item form-item3">
+        <!--!Que aparezca cuando seleccionemos la opción Otro en asunto con JS-->
+        <label for="subject-other">Otro</label>
+        <input for="subject-other" type="text" name="subject" required>
+      </div>
+      <div class="textarea-div form-item4">
+        <label for="message">Mensaje <sup>*</sup></label>
+        <textarea id="message" type="text" name="message" maxlength="300" placeholder="Máximo 300 caracteres"
+          required></textarea>
+      </div>
+      <div class="subscription-div form-item5">
+        <input type="checkbox" id="subscription" value="subscription" checked>
+        <label for="subscription">Quiero recibir novedades sobre Tecnosolidaria</label>
+      </div>
+      <div class="btn-container">
+        <input id="submit" class="form-btn btn-glow" type="submit" name="submit" value="Enviar">
+      </div>
+    </form>
+  </section>
+
+
+  <!-- *FOOTER* -->
+
+  <footer class="foot">
+    <ul class="social">
+      <li><a href="https://www.instagram.com/tecnosolidaria" target="_blank"><i
+            class="fa-brands fa-instagram"></i></a></li>
+      <li><a href="https://api.whatsapp.com/send?phone=543385436162" target="_blank"><i
+            class="fa-brands fa-whatsapp"></i></a></li>
+      <li><a href="https://github.com/santosbogo/tecnosolidaria" target="_blank"><i
+            class="fa-brands fa-github"></i></a></li>
+    </ul>
+    <div class="frase">“Los grandes cambios comienzan con las pequeñas cosas”</div>
+    <div class="copy">2021 -2022 | Copyright | Tecnosolidaria, todos los derechos reservados</div>
+  </footer>
 </body>
 </html>
