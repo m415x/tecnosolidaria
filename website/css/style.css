@@ -5,16 +5,11 @@
   body {
     grid-template-areas:  "header"
                           "index"
-                          "about-h2"
-                          "about-cont"
-                          "part-h2"
-                          "part-cont"
-                          "donate-h2"
-                          "donate-cont"
-                          "points-h2"
-                          "points-cont"
-                          "form-h2"
-                          "form-cont"
+                          "carousel"
+                          "about"
+                          "donate"
+                          "points"
+                          "form"
                           "footer";
   }
   .menubar {
@@ -26,11 +21,11 @@
   body {
     grid-template-areas:  "header header header"
                           "index index index"
-                          "about-h2 about-cont about-cont"
-                          "part-cont part-cont part-h2"
-                          "donate-h2 donate-cont donate-cont"
-                          "points-cont points-cont points-h2"
-                          "form-h2 form-cont form-cont"
+                          "carousel carousel carousel"
+                          "about about about"
+                          "donate donate donate"
+                          "points points points"
+                          "form form form"
                           "footer footer footer";
   }
   .menubar {
@@ -42,11 +37,11 @@
   body {
     grid-template-areas:  "header header"
                           "index index"
-                          "about-h2 about-cont"
-                          "part-cont part-h2"
-                          "donate-h2 donate-cont"
-                          "points-cont points-h2"
-                          "form-h2 form-cont"
+                          "carousel carousel"
+                          "about about"
+                          "donate donate"
+                          "points points"
+                          "form form"
                           "footer footer";
   }
 }
@@ -54,17 +49,32 @@
 /* *HTML - BODY* */
 
 body {
-  font-family: 'Open Sans', "Helvetica Neue", Helvetica, sans-serif;
+  font-family: Roboto, "Helvetica Neue", Helvetica, sans-serif;
   display: grid;
   grid-gap: 0;
   background: linear-gradient(180deg, #e1e1e1 0%, #0c3674 100%);
 }
-
 body > section {
   padding: 40px 0;
   text-align: center;
   background: #028484;
   color: #fff;
+}
+h2 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 21px;
+}
+p {
+  margin: 0 50px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 29px;
+  text-align: justify;
 }
 
 
@@ -128,59 +138,31 @@ body > section {
 }
 
 
+/* *CARRUSEL* */
+
+.carousel {
+  grid-area: carousel;
+}
+
+
 /* *QUIENES SOMOS* */
 
-.about-h2 {
-  grid-area: about-h2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.about-cont {
-  grid-area: about-cont;
-}
-
-
-/* *QUIERO SER PARTE* */
-
-.part-h2 {
-  grid-area: part-h2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.part-cont {
-  grid-area: part-cont;
+.about {
+  grid-area: about;
 }
 
 
 /* *DONACIONES* */
 
-.donate-h2 {
-  grid-area: donate-h2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.donate-cont {
-  grid-area: donate-cont;
+.donate {
+  grid-area: donate;
 }
 
 
 /* *PUNTOS DE ENTREGA* */
 
-.points-h2 {
-  grid-area: points-h2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.points-cont {
-  grid-area: points-cont;
-}
-.points-cont iframe {
-  margin: 10px 0px;
-  background: #add8e611;
+.points {
+  grid-area: points;
 }
 
 
@@ -275,36 +257,34 @@ body > section {
   animation: 0.2s cubic-bezier(0.47, 0, 0.745, 0.715) 0.7s 1 slide-up2;
   animation-fill-mode: forwards;
 }
-.contacto form label {
+.contact form label {
   color: #e1e1e1;
 }
-.contacto option,
-.contacto select,
-.contacto input,
+.contact option,
+.contact select,
+.contact input,
 .textarea-div textarea {
   background: #1b1a1a;
   color: #ffe5c3;
 }
 .form-h2 {
-  text-align: center;
-  font-size: 28px;
   padding: 0;
   margin-bottom: 1.25em;
-  grid-area: form-h2;
-}
-.form-cont {
-  grid-area: form-cont;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.contacto label {
+.form-cont {
+  display: block;
+  grid-area: form;
+}
+.contact label {
   display: block;
   margin-bottom: 0.35em;
   margin-top: 0.35em;
 }
-.contacto input:not(.form-btn),
-.contacto select {
+.contact input:not(.form-btn),
+.contact select {
   padding: 0.625em 1em;
   width: 100%;
   outline: 0;
@@ -315,7 +295,7 @@ body > section {
 .textarea-div {
   width: 100%;
 }
-.contacto textarea {
+.contact textarea {
   padding: 10px;
   width: 100%;
   outline: 0;
@@ -349,9 +329,9 @@ body > section {
 .form-btn:hover {
   background: #f29335;
 }
-.contacto input:focus,
-.contacto select:focus,
-.contacto textarea:focus {
+.contact input:focus,
+.contact select:focus,
+.contact textarea:focus {
   animation: continuous-glow 800ms ease-out infinite alternate;
   box-shadow: 0 0 5px #f29335, inset 0 0 5px #f29335, 0 2px 0 #000;
   color: #ffe5c3;
