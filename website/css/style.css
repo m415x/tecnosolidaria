@@ -1,6 +1,8 @@
-/* *MEDIA QUERIES* */
+/**---------------**/
+/** MEDIA QUERIES **/
+/**---------------**/
 
-/* Smartphone media query */
+/* Smartphone */
 @media only screen and (max-width: 768px) {
   body {
     grid-template-areas:  "header"
@@ -11,7 +13,8 @@
                           "about-cont"
                           "donate"
                           "points"
-                          "form"
+                          "form-head"
+                          "form-cont"
                           "footer";
   }
   .menubar {
@@ -24,7 +27,7 @@
     width: 60%;
   }
 }
-/* Tablet media query */
+/* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   body {
     grid-template-areas:  "header header header"
@@ -33,7 +36,7 @@
                           "about-cont about-cont about-head"
                           "donate donate donate"
                           "points points points"
-                          "form form form"
+                          "form-head form-cont form-cont"
                           "footer footer footer";
   }
   .menubar {
@@ -46,7 +49,7 @@
     padding: 30px;
   }
 }
-/* Desktop media query */
+/* Desktop */
 @media only screen and (min-width: 1024px) {
   body {
     grid-template-areas:  "header header"
@@ -55,7 +58,7 @@
                           "about-cont about-head"
                           "donate donate"
                           "points points"
-                          "form form"
+                          "form-head form-cont"
                           "footer footer";
   }
   .index {
@@ -66,7 +69,10 @@
   }
 }
 
-/* *HTML - BODY* */
+
+/**-------------**/
+/** HTML - BODY **/
+/**-------------**/
 
 body {
   font-family: Roboto, "Helvetica Neue", Helvetica, sans-serif;
@@ -103,8 +109,9 @@ strong {
   font-style: italic;
 }
 
-
-/* *HEADER* */
+/**--------**/
+/** HEADER **/
+/**--------**/
 
 .header {
   display: flex;
@@ -155,8 +162,9 @@ strong {
   border: 1px solid #ffffff;
 }
 
-
-/* *INDEX* */
+/**-------**/
+/** INDEX **/
+/**-------**/
 
 .index__pic {
   width: 100%;
@@ -171,19 +179,21 @@ strong {
 }
 .index__pic--styles,
 .index__cont--styles {
- margin: auto;
- display: block;
+  margin: auto;
+  display: block;
 }
 
-
-/* *CARRUSEL* */
+/**----------**/
+/** CARRUSEL **/
+/**----------**/
 
 .carousel {
   grid-area: carousel;
 }
 
-
-/* *QUIENES SOMOS* */
+/**---------------**/
+/** QUIENES SOMOS **/
+/**---------------**/
 
 .about__head {
   width: 100%;
@@ -199,28 +209,34 @@ strong {
 }
 .about__head--styles,
 .about__cont--styles {
- margin: auto;
- display: block;
+  margin: auto;
+  display: block;
 }
 
 
-/* *DONACIONES* */
+/**------------**/
+/** DONACIONES **/
+/**------------**/
 
 .donate {
   grid-area: donate;
 }
 
 
-/* *PUNTOS DE ENTREGA* */
+/**-------------------**/
+/** PUNTOS DE ENTREGA **/
+/**-------------------**/
 
 .points {
   grid-area: points;
 }
 
 
-/* *FORMULARIO DE CONTACTO* */
+/**------------------------**/
+/** FORMULARIO DE CONTACTO **/
+/**------------------------**/
 
-@media only screen and (min-width: 572px) {
+@media only screen and (min-width: 768px) {
   .form {
     display: flex;
     flex-wrap: wrap;
@@ -237,9 +253,9 @@ strong {
     width: 45%;
   }
 }
-@media only screen and (min-width: 970px) {
-  .contacto {
-    padding: 8em 0;
+@media only screen and (min-width: 1024px) {
+  .contact {
+    /* padding: 8em 0; */
     width: 100%;
   }
   .btn-container {
@@ -281,6 +297,23 @@ strong {
     filter: blur(0);
   }
 }
+.form__head {
+  width: 100%;
+  display: flex;
+  color: #1b1a1a;
+  background: #e1e1e1;
+  grid-area: form-head;
+}
+.form__cont {
+  width: 100%;
+  display: flex;
+  grid-area: form-cont;
+}
+.form__head--styles,
+.form__cont--styles {
+  margin: auto;
+  display: block;
+}
 .form {
   padding: 1.5em;
 }
@@ -318,17 +351,6 @@ strong {
 .textarea-div textarea {
   background: #1b1a1a;
   color: #ffe5c3;
-}
-.form-h2 {
-  padding: 0;
-  margin-bottom: 1.25em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.form-cont {
-  display: block;
-  grid-area: form;
 }
 .contact label {
   display: block;
@@ -422,7 +444,9 @@ strong {
 }
 
 
-/* *FOOTER* */
+/**--------**/
+/** FOOTER **/
+/**--------**/
 
 .footer {
   background: #1b1a1a;

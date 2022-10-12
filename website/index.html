@@ -88,49 +88,49 @@
 
   <!-- *FORMULARIO DE CONTACTO* -->
 
-  <section class="contact form-cont" id="contact">
-    <h2 class="form-h2">Contacto</h2>
-    <form class="form" action="#" method="post">
+  <section class="contact form__head">
+    <h2 class="form__head--styles">Contacto</h2>
+  </section>
+  <section class="contact form__cont" id="contact">
+    <form class="form form__cont--styles" action="#" method="post" name="form">
       <div class="form-item form-item1">
         <label for="firstname">Nombre <sup>*</sup></label>
-        <input id="firstname" type="text" name="firstname" placeholder="Tu nombre" required>
+        <input id="firstname" type="text" name="firstname" placeholder="Tu nombre">
       </div>
       <div class="form-item form-item1">
         <label for="lastname">Apellido <sup>*</sup></label>
-        <input for="lastname" type="text" name="lastname" placeholder="Tu apellido" required>
+        <input for="lastname" type="text" name="lastname" placeholder="Tu apellido">
       </div>
       <div class="form-item form-item2">
         <label for="email">Email <sup>*</sup></label>
-        <input id="email" type="email" name="email" placeholder="ejemplo@email.com" required>
+        <input id="email" type="email" name="email" placeholder="ejemplo@email.com">
+        <span id="email-ok" name="email-ok"></span>
       </div>
       <div class="form-item form-item2">
         <label for="phonenumber">Teléfono</label>
-        <input id="phonenumber" type="tel" name="phonenumber" placeholder="+54 11 5 1234567">
+        <input id="phonenumber" type="tel" name="phonenumber" placeholder="11 5 1234567">
       </div>
       <div class="form-item form-item3">
         <label for="subject">Asunto</label>
-        <select name="subject" id="subject">
-          <option value="1">Consulta</option>
-          <option value="2">Sugerencia</option>
-          <option value="3">Otro</option>
+        <select name="subject" id="subject" onChange="mostrar(this.value);">
+          <option value="consulta">Consulta</option>
+          <option value="sugerencia">Sugerencia</option>
+          <option value="otro">Otro</option>
         </select>
       </div>
-      <div class="form-item form-item3">
-        <!--!Que aparezca cuando seleccionemos la opción Otro en asunto con JS-->
-        <label for="subject-other">Otro</label>
-        <input for="subject-other" type="text" name="subject" required>
+      <div class="form-item form-item3" id="otro" style="display: none;">
+        <input type="text" name="other">
       </div>
       <div class="textarea-div form-item4">
         <label for="message">Mensaje <sup>*</sup></label>
-        <textarea id="message" type="text" name="message" maxlength="300" placeholder="Máximo 300 caracteres"
-          required></textarea>
+        <textarea id="message" type="text" name="message" maxlength="300" placeholder="Máximo 300 caracteres"></textarea>
       </div>
       <div class="subscription-div form-item5">
         <input type="checkbox" id="subscription" value="subscription" checked>
         <label for="subscription">Quiero recibir novedades sobre Tecnosolidaria</label>
       </div>
       <div class="btn-container">
-        <input id="submit" class="form-btn btn-glow" type="submit" name="submit" value="Enviar">
+        <input id="submit" class="form-btn btn-glow" type="button" name="submit" value="Enviar" onclick="validarFormulario()">
       </div>
     </form>
   </section>
