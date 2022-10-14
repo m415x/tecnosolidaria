@@ -72,6 +72,12 @@ function validarFormulario() {
     document.form.lastname.focus()
     return 0
   }
+    // Mensaje
+    if (document.form.message.value.length == 0) {
+      alert("Debes escribir un mensaje")
+      document.form.message.focus()
+      return 0
+    }
   // Enviar formulario
   alert("Muchas gracias")
   document.form.submit()

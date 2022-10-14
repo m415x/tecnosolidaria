@@ -169,7 +169,7 @@ strong {
 .index__pic {
   width: 100%;
   display: flex;
-  background: #e1e1e1;
+  /* background: #e1e1e1; */
   grid-area: index-pic;
 }
 .index__cont {
@@ -263,7 +263,7 @@ strong {
   width: 100%;
   display: flex;
   color: #1b1a1a;
-  background: #e1e1e1;
+  /* background: #e1e1e1; */
   grid-area: about-head;
 }
 .about__cont {
@@ -365,7 +365,7 @@ strong {
   width: 100%;
   display: flex;
   color: #1b1a1a;
-  background: #e1e1e1;
+  /* background: #e1e1e1; */
   align-items: center;
   grid-area: form-head;
 }
