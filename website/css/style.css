@@ -8,7 +8,7 @@
     grid-template-areas:  "header"
                           "index-pic"
                           "index-cont"
-                          "carousel"
+                          "carousel-area"
                           "about-head"
                           "about-cont"
                           "donate"
@@ -32,7 +32,7 @@
   body {
     grid-template-areas:  "header header header"
                           "index-pic index-cont index-cont"
-                          "carousel carousel carousel"
+                          "carousel-area carousel-area carousel-area"
                           "about-cont about-cont about-head"
                           "donate donate donate"
                           "points points points"
@@ -54,7 +54,7 @@
   body {
     grid-template-areas:  "header header"
                           "index-pic index-cont"
-                          "carousel carousel"
+                          "carousel-area carousel-area"
                           "about-cont about-head"
                           "donate donate"
                           "points points"
@@ -187,8 +187,72 @@ strong {
 /** CARRUSEL **/
 /**----------**/
 
-.carousel {
-  grid-area: carousel;
+.carousel-area {
+  grid-area: carousel-area;
+}
+
+.carousel-titulo{
+  font-size: 50px;
+  /* font-family: 'Dancing Script', cursive; */
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.carousel-subtitulo{
+  margin: 20px;
+  color: #fff;
+  display: inline;
+  font-size: 40px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.carousel-line-div{
+  width: 80%;
+  height: 2px;
+  background-color: #36221c;
+}
+
+.carousel-texto{
+  color: #fff;
+  margin: 10px 0px;
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow: 2px 2px 1px rgba(0,0,0,0.7);
+  /* font-family: 'Dancing Script', cursive; */
+  margin-top: 0;
+}
+
+.carousel{
+  min-height: 700px;
+}
+
+.carousel .carousel-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  width: 500px;
+  height: 500px;
+}
+
+.carousel-item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 15px;
+}
+
+.carousel .indicators .indicator-item {
+  border-radius: 0;
+  transform: rotate(45deg);
+  margin: 0 15px;
+  background: #36221c;
 }
 
 /**---------------**/
