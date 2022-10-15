@@ -1,3 +1,20 @@
+/*----------*/
+/** HEADER **/
+/*----------*/
+
+//Ocultar/mostrar menu al hacer scroll
+let ubicacionPrincipal = window.scrollY
+window.onscroll = function () {
+  let desplazamiento = window.scrollY
+  if (ubicacionPrincipal >= desplazamiento) {
+    document.getElementById('header').style.top = '0'
+  } else {
+    document.getElementById('header').style.top = '-100px'
+  }
+  ubicacionPrincipal = desplazamiento
+}
+
+
 /*---------------------*/
 /** MENÚ HAMBURGUESA **/
 /*--------------------*/
@@ -22,7 +39,7 @@
 /** FORMULARIO DE CONTACTO **/
 /*--------------------------*/
 
-/* Mostrar input Asunto: "otro" */
+// Mostrar input Asunto: "otro"
 function mostrar(id) {
   if (id == "otro") {
     document.getElementById("otro").style.display = ""
@@ -32,21 +49,18 @@ function mostrar(id) {
   }
 }
 
-/* Validar Formulario */
+// Validar Formulario
 function validarFormulario() {
-  // Nombre
   if (document.form.firstname.value.length == 0) {
     alert("Debes completar tu nombre")
     document.form.firstname.focus()
     return 0
   }
-  // Apellido
   if (document.form.lastname.value.length == 0) {
     alert("Debes completar tu apellido")
     document.form.lastname.focus()
     return 0
   }
-  // Email
   let emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i
   if (document.form.email.value.length == 0) {
     alert("Debes agregar una dirección de email")
@@ -57,7 +71,6 @@ function validarFormulario() {
     document.form.email.focus()
     return 0
   }
-  // Teléfono
   let telRegex = /^(?:(?:00)?549?)?0?(?:11|[2368]\d)(?:(?=\d{0,2}15)\d{2})??\d{8}$/g
   if (document.form.phonenumber.value.length > 0) {
     if (telRegex.test(document.form.phonenumber.value) != true) {
@@ -66,26 +79,25 @@ function validarFormulario() {
       return 0
     }
   }
-  // Asunto
   if (document.form.lastname.value.length == 0) {
     alert("Debes completar tu apellido")
     document.form.lastname.focus()
     return 0
   }
-    // Mensaje
     if (document.form.message.value.length == 0) {
       alert("Debes escribir un mensaje")
       document.form.message.focus()
       return 0
     }
-  // Enviar formulario
   alert("Muchas gracias")
   document.form.submit()
 }
 
+
 /*--------------------------*/
 /**        CAROUSEL        **/
 /*--------------------------*/
+
 document.addEventListener('DOMContentLoaded', () => {
   const elementosCarousel = document.querySelectorAll('.carousel');
   M.Carousel.init(elementosCarousel, {

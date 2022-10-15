@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0">
@@ -8,45 +9,84 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/materialize.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
   <script src="https://kit.fontawesome.com/452988f36c.js" crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
   <title>Tecnosolidaria</title>
 </head>
+
 <body>
 
   <!--*--------*-->
   <!--* HEADER *-->
   <!--*--------*-->
 
-  <header class="header">
-    <a class="logo-container" href="#index">
+  <header class="desktop-header">
+    <div class="header" id="header">
       <img class="logo-img" src="img/logo-vectorizado.svg" alt="Logo Tecnosolidaria">
-    </a>
-    <nav class="menubar">
-      <a class="btn-menubar" href="#index">Inicio</a>
-      <a class="btn-menubar" href="#carousel-area">Fotos</a>
-      <a class="btn-menubar" href="#about">Quienes somos</a>
-      <a class="btn-menubar" href="#donate">Donaciones</a>
-      <a class="btn-menubar" href="#points">Puntos de entrega</a>
-      <a class="btn-menubar" href="#contact">Contacto</a>
-    </nav>
+      <nav class="menubar" id="menubar">
+        <ul class="menu__list">
+          <li class="list__item"></li><a class="link" href="#index">Inicio</a></li>
+          <li class="list__item"></li><a class="link" href="#carousel">Fotos</a></li>
+          <li class="list__item"></li><a class="link" href="#about">Quienes somos</a></li>
+          <li class="list__item"></li><a class="link" href="#donate">Donaciones</a></li>
+          <li class="list__item"></li><a class="link" href="#points">Puntos de entrega</a></li>
+          <li class="list__item"></li><a class="link" href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
+  <!-- <header class="main-header" >
+    <a class="main-logo" href="https://progradudi.netlify.app" >
+      <strong>Progra_dudi</strong>
+    </a>
+    <nav id="nav" class="main-nav" >
+      <div class="nav-links" >
+        <a class="link-item" href="#index">Inicio</a>      
+        <a class="link-item" href="#carousel">Fotos</a>
+        <a class="link-item" href="#about">Quienes somos</a>
+        <a class="link-item" href="#donate">Donaciones</a>
+        <a class="link-item" href="#points">Puntos de entrega</a>
+        <a class="link-item" href="#contact">Contacto</a>
+      </div>
+    </nav>
+    <button id="button-menu" class="button-menu" >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header> -->
 
   <!--*-------*-->
   <!--* INDEX *-->
   <!--*-------*-->
 
-  <section class="index index__pic" id="index">
-    <img src="img/reutilizacion.png" alt="reutilización" class="index__pic--styles"></img>
-  </section>
-  <section class="index index__cont">
-    <article class="index__cont--styles">
-      <p>El avance tecnológico y la oferta constante del mercado nos impulsan, por un lado, a la compra de dispositivos con nuevas funciones y diseños, y por otro, a desechar los aparatos que estaban en uso. Esta renovación de la tecnología trae aparejado un alarmante aumento de desechos eléctricos y electrónicos que se producen cada año. </p>
-      <p>El principal problema con los Activos IT en desuso está en la basura y la contaminación que puede producir al acumularse, dado que los Residuos de Aparatos Eléctricos y Electrónicos (RAEE's) contienen sustancias químicas que contaminan el medio ambiente y al mezclarse con el resto de la basura, desprenden metales tóxicos perjudiciales para la salud. </p>
-      <p>Atendiendo a esta cuestión, necesitamos concientizar a la población que los residuos electrónicos no son basura y que, por el contrario, la reutilización es la alternativa indicada para recuperar los aparatos eléctricos y electrónicos de una manera económica, técnica y ambientalmente más eficiente que el reciclaje. </p>
-      <p><strong class="index__cont--strong">Tecnosolidaria</strong> nace con el objetivo de ayudar a todos aquellos chicos que necesitan de dispositivos tecnológicos para no perder la oportunidad de seguir estudiando. </p>
+  <section class="index" id="index">
+    <h2 class="index__head">¿Qué es Tecnosolidaria?</h2>
+    <article class="index__cont">
+      <p><strong class="index__cont--strong">Tecnosolidaria</strong> es una iniciativa que nace de la solidaridad. Tiene
+        por objetivo reacondicionar celulares, tablets y computadoras, y donarlos a niños y niñas que necesiten de
+        dispositivos tecnológicos para poder seguir estudiando. </p>
+      <h3 class="index__title">Contexto</h3>
+      <div class="index__sec">
+        <div class="index__sec--p">
+          <img class="index__sec--pic" src="img/reutilizacion.png" alt="reutilización"></img>
+          <p>El avance tecnológico y la oferta constante del mercado nos impulsan, por un lado, a la compra de
+          dispositivos con nuevas funciones y diseños, y por otro, a desechar los aparatos que estaban en uso. Esta
+          renovación de la tecnología trae aparejado un alarmante aumento de desechos eléctricos y electrónicos que se
+          producen cada año.</p>
+          <p>El principal problema con los Activos IT en desuso está en la basura y la contaminación que puede producir al
+          acumularse, dado que los Residuos de Aparatos Eléctricos y Electrónicos (RAEE's) contienen sustancias químicas
+          que contaminan el medio ambiente y al mezclarse con el resto de la basura, desprenden metales tóxicos
+          perjudiciales para la salud.</p>
+          <p>Atendiendo a esta cuestión, necesitamos concientizar a la población que los residuos electrónicos no son
+          basura y que, por el contrario, la reutilización es la alternativa indicada para recuperar los aparatos
+          eléctricos y electrónicos de una manera económica, técnica y ambientalmente más eficiente que el reciclaje.</p>
+        </div>
+      </div>
     </article>
   </section>
 
@@ -54,53 +94,53 @@
   <!--*----------*-->
   <!--* CARRUSEL *-->
   <!--*----------*-->
-  
-  <section class="carousel-area" id="carousel-area">
+
+  <section class="carousel-area" id="carousel">
     <div class="container">
       <div class="row">
-          <div class="col s12">
-              <h1 class="center-align carousel-titulo">Nuestra vision en Fotos!</h1>
+        <div class="col s12">
+          <h1 class="center-align carousel-titulo">Nuestra vision en Fotos!</h1>
 
-              <div class="carousel center-align">
-                  <div class="carousel-item">
-                      <h2 class="carousel-subtitulo">Trabajamos</h2>
-                      <div class="carousel-line-div"></div>
-                      <p class="carousel-texto">y ayudamos</p>
-                      <img src="./img/TecnoSolidaria-01.jpg" alt="Persona trajando en computadora">
-                  </div>
+          <div class="carousel center-align">
+            <div class="carousel-item">
+              <h2 class="carousel-subtitulo">Trabajamos</h2>
+              <div class="carousel-line-div"></div>
+              <p class="carousel-texto">y ayudamos</p>
+              <img src="./img/TecnoSolidaria-01.jpg" alt="Persona trajando en computadora">
+            </div>
 
-                  <div class="carousel-item">
-                      <h2 class="carousel-subtitulo">Reparamos</h2>
-                      <div class="carousel-line-div"></div>
-                      <p class="carousel-texto">y reutilizamos</p>
-                      <img src="./img/TecnoSolidaria-02.jpg" alt="Persona reparando computadoras de escritorio">
-                  </div>
+            <div class="carousel-item">
+              <h2 class="carousel-subtitulo">Reparamos</h2>
+              <div class="carousel-line-div"></div>
+              <p class="carousel-texto">y reutilizamos</p>
+              <img src="./img/TecnoSolidaria-02.jpg" alt="Persona reparando computadoras de escritorio">
+            </div>
 
-                  <div class="carousel-item">
-                      <h2 class="carousel-subtitulo">Por nosotros</h2>
-                      <div class="carousel-line-div"></div>
-                      <p class="carousel-texto">y nuestro futuro</p>
-                      <img src="./img/TecnoSolidaria-03.jpg" alt="Un hombre y una nena reparando dispositivos electronicos">
-                  </div>
+            <div class="carousel-item">
+              <h2 class="carousel-subtitulo">Por nosotros</h2>
+              <div class="carousel-line-div"></div>
+              <p class="carousel-texto">y nuestro futuro</p>
+              <img src="./img/TecnoSolidaria-03.jpg" alt="Un hombre y una nena reparando dispositivos electronicos">
+            </div>
 
-                  <div class="carousel-item">
-                      <h2 class="carousel-subtitulo">Acortando</h2>
-                      <div class="carousel-line-div"></div>
-                      <p class="carousel-texto">brechas</p>
-                      <img src="./img/TecnoSolidaria-04.jpg" alt="Dos personas tomandose una foto">
-                  </div>
+            <div class="carousel-item">
+              <h2 class="carousel-subtitulo">Acortando</h2>
+              <div class="carousel-line-div"></div>
+              <p class="carousel-texto">brechas</p>
+              <img src="./img/TecnoSolidaria-04.jpg" alt="Dos personas tomandose una foto">
+            </div>
 
-                  <div class="carousel-item">
-                      <h2 class="carousel-subtitulo">Juntos</h2>
-                      <div class="carousel-line-div"></div>
-                      <p class="carousel-texto">somos mas</p>
-                      <img src="./img/TecnoSolidaria-05.jpg" alt="Manos juntas formando un circulo">
-                  </div>
-              </div>
+            <div class="carousel-item">
+              <h2 class="carousel-subtitulo">Juntos</h2>
+              <div class="carousel-line-div"></div>
+              <p class="carousel-texto">somos mas</p>
+              <img src="./img/TecnoSolidaria-05.jpg" alt="Manos juntas formando un circulo">
+            </div>
           </div>
+        </div>
       </div>
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </section>
 
 
@@ -108,12 +148,16 @@
   <!--* QUIENES SOMOS *-->
   <!--*---------------*-->
 
-  <section class="about about__head" id="about">
-    <h2 class="about__head--styles">Quienes somos</h2>
-  </section>
-  <section class="about about__cont">
-    <article class="about__cont--styles">
-      <p>Mi nombre es Santos Bogo. Soy estudiante de ingeniería electrónica y cuento con conocimientos y experiencia en reparación de celulares y computadoras. Estoy iniciando un proyecto que tiene como objetivo ayudar a aquellas personas que necesitan equipos electrónicos, pero no tienen los recursos necesarios para adquirirlos... Por eso, si tenés computadoras, celulares o tablets que ya no uses o estén rotos, podés colaborar con este proyecto y contactarte con nosotros. Luego de repararlos y dejarlos en las mejores condiciones posibles, les encontraremos un nuevo dueño. Todos podemos colaborar poniendo nuestro granito de arena. Aceptamos todo tipo de donaciones. </p>
+  <section class="about" id="about">
+    <h2 class="about__head">¿Quiénes somos?</h2>
+    <article class="about__cont">
+      <p>Mi nombre es Santos Bogo. Soy estudiante de ingeniería electrónica y cuento con conocimientos y experiencia en
+        reparación de celulares y computadoras. Estoy iniciando un proyecto que tiene como objetivo ayudar a aquellas
+        personas que necesitan equipos electrónicos, pero no tienen los recursos necesarios para adquirirlos... Por eso,
+        si tenés computadoras, celulares o tablets que ya no uses o estén rotos, podés colaborar con este proyecto y
+        contactarte con nosotros. Luego de repararlos y dejarlos en las mejores condiciones posibles, les encontraremos
+        un nuevo dueño. Todos podemos colaborar poniendo nuestro granito de arena. Aceptamos todo tipo de donaciones.
+      </p>
     </article>
   </section>
 
@@ -125,7 +169,10 @@
   <section class="donate" id="donate">
     <h2 class="donate__head">Donaciones</h2>
     <article class="donate__cont">
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis ullam facere recusandae itaque dolorem nihil incidunt impedit magnam nesciunt, quo molestiae ipsa? Praesentium aperiam accusantium at iste similique. Fugiat ad esse quam tempora, sapiente corrupti. Veritatis labore aut ipsam eaque doloremque veniam, pariatur officia perferendis a animi soluta ducimus amet.</p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis ullam facere recusandae itaque dolorem nihil
+        incidunt impedit magnam nesciunt, quo molestiae ipsa? Praesentium aperiam accusantium at iste similique. Fugiat
+        ad esse quam tempora, sapiente corrupti. Veritatis labore aut ipsam eaque doloremque veniam, pariatur officia
+        perferendis a animi soluta ducimus amet.</p>
     </article>
   </section>
 
@@ -137,7 +184,9 @@
   <section class="points" id="points">
     <h2 class="points_head">Puntos de Entrega</h2>
     <article class="points__cont">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26278.11553314055!2d-58.41385245497884!3d-34.584826449702774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca99c609fc2f%3A0x392ca99351808a75!2sRecoleta%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1661122633315!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26278.11553314055!2d-58.41385245497884!3d-34.584826449702774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca99c609fc2f%3A0x392ca99351808a75!2sRecoleta%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1661122633315!5m2!1ses-419!2sar"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </article>
   </section>
 
@@ -181,14 +230,16 @@
       </div>
       <div class="form__cont--textarea form__cont--item4">
         <label for="message">Mensaje <sup>*</sup></label>
-        <textarea id="message" type="text" name="message" maxlength="300" placeholder="Máximo 300 caracteres"></textarea>
+        <textarea id="message" type="text" name="message" maxlength="300"
+          placeholder="Máximo 300 caracteres"></textarea>
       </div>
       <div class="form__cont--subs form__cont--item5">
         <input type="checkbox" id="subscription" value="subscription" checked>
         <label for="subscription">Recibir novedades sobre Tecnosolidaria</label>
       </div>
       <div class="form__btn">
-        <input id="submit" class="form__btn--styles" type="button" name="submit" value="Enviar" onclick="validarFormulario()">
+        <input id="submit" class="form__btn--styles" type="button" name="submit" value="Enviar"
+          onclick="validarFormulario()">
       </div>
     </form>
   </section>
@@ -200,43 +251,14 @@
 
   <footer class="footer">
     <div class="social">
-      <a href="https://www.instagram.com/tecnosolidaria" target="_blank"><i
-            class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.instagram.com/tecnosolidaria" target="_blank"><i class="fa-brands fa-instagram"></i></a>
       <a href="https://api.whatsapp.com/send?phone=543385436162" target="_blank"><i
-            class="fa-brands fa-whatsapp"></i></a>
-      <a href="https://github.com/santosbogo/tecnosolidaria" target="_blank"><i
-            class="fa-brands fa-github"></i></a>
+          class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://github.com/santosbogo/tecnosolidaria" target="_blank"><i class="fa-brands fa-github"></i></a>
     </div>
     <div class="frase">“Los grandes cambios comienzan con las pequeñas cosas”</div>
     <div class="copy">2021 -2022 | Copyright | Tecnosolidaria, todos los derechos reservados</div>
   </footer>
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-<!-- <header class="main-header" >
-  <a class="main-logo" href="https://progradudi.netlify.app" >
-    <strong>Progra_dudi</strong>
-  </a>
-  <nav id="nav" class="main-nav" >
-    <div class="nav-links" >
-      <a class="link-item" href="#" >Link1</a>
-      <a class="link-item" href="#" >Link2</a>
-      <a class="link-item" href="#" >Link3</a>
-      <a class="link-item" href="#" >Link4</a>
-    </div>
-  </nav>
-  <button id="button-menu" class="button-menu" >
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-</header> -->
