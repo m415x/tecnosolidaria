@@ -26,6 +26,11 @@
   <header class="desktop-header">
     <div class="header" id="header">
       <img class="logo-img" src="img/logo-vectorizado.svg" alt="Logo Tecnosolidaria">
+      <input type="checkbox" id="menu-check">
+      <label for="menu-check" id="menu">
+        <i class="fa-solid fa-bars" id="menu-abrir"></i>
+        <i class="fa-solid fa-xmark" id="menu-cerrar"></i>
+      </label>
       <nav class="menubar" id="menubar">
         <ul class="menu__list">
           <li class="list__item"></li><a class="link" href="#index">Inicio</a></li>
@@ -39,26 +44,6 @@
     </div>
   </header>
 
-  <!-- <header class="main-header" >
-    <a class="main-logo" href="https://progradudi.netlify.app" >
-      <strong>Progra_dudi</strong>
-    </a>
-    <nav id="nav" class="main-nav" >
-      <div class="nav-links" >
-        <a class="link-item" href="#index">Inicio</a>      
-        <a class="link-item" href="#carousel">Fotos</a>
-        <a class="link-item" href="#about">Quienes somos</a>
-        <a class="link-item" href="#donate">Donaciones</a>
-        <a class="link-item" href="#points">Puntos de entrega</a>
-        <a class="link-item" href="#contact">Contacto</a>
-      </div>
-    </nav>
-    <button id="button-menu" class="button-menu" >
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  </header> -->
 
   <!--*-------*-->
   <!--* INDEX *-->
@@ -68,7 +53,7 @@
     <h2 class="index__head">¿Qué es Tecnosolidaria?</h2>
     <article class="index__cont">
       <p><strong class="index__cont--strong">Tecnosolidaria</strong> es una iniciativa que nace de la solidaridad. Tiene
-        por objetivo reacondicionar celulares, tablets y computadoras, y donarlos a niños y niñas que necesiten de
+        como mision reacondicionar celulares, tablets y computadoras, y donarlos a niños y niñas que necesiten de
         dispositivos tecnológicos para poder seguir estudiando. </p>
       <h3 class="index__title">Contexto</h3>
       <div class="index__sec">
@@ -99,7 +84,7 @@
     <div class="container">
       <div class="row">
         <div class="col s12">
-          <h1 class="center-align carousel-titulo">Nuestra vision en Fotos!</h1>
+          <h2>Nuestra vision en Fotos!</h2>
 
           <div class="carousel center-align">
             <div class="carousel-item">
@@ -195,29 +180,27 @@
   <!--* FORMULARIO DE CONTACTO *-->
   <!--*------------------------*-->
 
-  <section class="form__head">
-    <h2 class="form__head--styles">Contacto</h2>
-  </section>
   <section class="form__cont" id="contact">
+    <h2 class="form__head--styles">Contacto</h2>
     <form class="form__cont--styles" action="#" method="post" name="form">
       <div class="form__cont--item form__cont--item1">
         <label for="firstname">Nombre <sup>*</sup></label>
         <input id="firstname" type="text" name="firstname" placeholder="Tu nombre">
       </div>
-      <div class="form__cont--item form__cont--item1">
+      <div class="form__cont--item form__cont--item2">
         <label for="lastname">Apellido <sup>*</sup></label>
         <input for="lastname" type="text" name="lastname" placeholder="Tu apellido">
       </div>
-      <div class="form__cont--item form__cont--item2">
+      <div class="form__cont--item form__cont--item3">
         <label for="email">Email <sup>*</sup></label>
         <input id="email" type="email" name="email" placeholder="ej. ejemplo@email.com">
         <span id="email-ok" name="email-ok"></span>
       </div>
-      <div class="form__cont--item form__cont--item2">
+      <div class="form__cont--item form__cont--item4">
         <label for="phonenumber">Teléfono</label>
         <input id="phonenumber" type="tel" name="phonenumber" placeholder="ej. 11 5 1234567">
       </div>
-      <div class="form__cont--item form__cont--item3">
+      <div class="form__cont--item form__cont--item5">
         <label for="subject">Asunto</label>
         <select name="subject" id="subject" onChange="mostrar(this.value);">
           <option value="consulta">Consulta</option>
@@ -225,15 +208,15 @@
           <option value="otro">Otro</option>
         </select>
       </div>
-      <div class="form__cont--item form__cont--item3" id="otro" style="display: none;">
-        <input type="text" name="other">
+      <div class="form__cont--item form__cont--item6">
+        <input type="text" name="other" id="otro" style="display: none;">
       </div>
-      <div class="form__cont--textarea form__cont--item4">
+      <div class="form__cont--textarea form__cont--text">
         <label for="message">Mensaje <sup>*</sup></label>
         <textarea id="message" type="text" name="message" maxlength="300"
           placeholder="Máximo 300 caracteres"></textarea>
       </div>
-      <div class="form__cont--subs form__cont--item5">
+      <div class="form__cont--subs">
         <input type="checkbox" id="subscription" value="subscription" checked>
         <label for="subscription">Recibir novedades sobre Tecnosolidaria</label>
       </div>
