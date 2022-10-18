@@ -373,7 +373,66 @@ strong {
 .donate__head {
   margin: 2em 0 2em;
 }
-
+.donate__container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 90%;
+  height: 500px;
+  margin: 30px auto;
+}
+.donate__item{
+  border: 2px solid #fff;
+  width: 45%;
+  margin: 15px;
+  border-radius: 15px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+}
+.donate__item:hover{
+  box-shadow: 8px 8px 9px rgb(196, 183, 183);
+  background: linear-gradient(45deg, #F29335 0%, #047A7A 80%);
+  color: #003;
+}
+.donate__item-titulo{
+  margin: 15px auto 30px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 1.5em;
+}
+.donate__list{
+  text-align: start;
+  list-style: ;
+}
+.donate__list-item{
+  margin: 15px 25px;
+  padding: 5px;
+}
+.donate__btn{
+  text-decoration: none;
+  color: inherit;
+  padding: 10px;
+  position: relative;
+}
+.donate__btn:after {
+  content: "";
+  width: 0;
+  height: 4px;
+  background: linear-gradient(45deg, #f29335 0%, #0C3674 100%);
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transition: all .5s;
+  will-change: width;
+  color: #000;
+}
+.donate__btn:hover:after {
+  width: 100%;
+  right: 0;
+}
 
 /**-------------------**/
 /** PUNTOS DE ENTREGA **/
