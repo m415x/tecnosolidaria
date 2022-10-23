@@ -18,68 +18,77 @@
 </head>
 
 <body>
+  <div class="body">
+    <header>
+      <div class="header" id="header">
+        <img class="logo-img" src="img/logo-vectorizado.svg" alt="Logo Tecnosolidaria">
+        <input type="checkbox" id="menu-check">
+        <label for="menu-check" id="menu">
+          <i class="fa-solid fa-bars" id="menu-abrir"></i>
+          <i class="fa-solid fa-xmark" id="menu-cerrar"></i>
+        </label>
+        <nav class="menubar" id="menubar">
+          <ul class="menu__list">
+            <li class="list__item"></li><a class="link" onclick="home()" href="#home">Inicio</a></li>
+            <li class="list__item"></li><a class="link" onclick="carousel()" href="#carousel">Fotos</a></li>
+            <li class="list__item"></li><a class="link" onclick="about()" href="#about">Quienes somos</a></li>
+            <li class="list__item"></li><a class="link" onclick="donate()" href="#donate">Donaciones</a></li>
+            <li class="list__item"></li><a class="link" onclick="points()" href="#points">Puntos de entrega</a></li>
+            <li class="list__item"></li><a class="link" onclick="contact()" href="#contact">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-  <header class="desktop-header">
-    <div class="header" id="header">
-      <img class="logo-img" src="img/logo-vectorizado.svg" alt="Logo Tecnosolidaria">
-      <input type="checkbox" id="menu-check">
-      <label for="menu-check" id="menu">
-        <i class="fa-solid fa-bars" id="menu-abrir"></i>
-        <i class="fa-solid fa-xmark" id="menu-cerrar"></i>
-      </label>
-      <nav class="menubar" id="menubar">
-        <ul class="menu__list">
-          <li class="list__item"></li><a class="link" onclick="home()" href="#home">Inicio</a></li>
-          <li class="list__item"></li><a class="link" onclick="carousel()" href="#carousel">Fotos</a></li>
-          <li class="list__item"></li><a class="link" onclick="about()" href="#about">Quienes somos</a></li>
-          <li class="list__item"></li><a class="link" onclick="donate()" href="#donate">Donaciones</a></li>
-          <li class="list__item"></li><a class="link" onclick="points()" href="#points">Puntos de entrega</a></li>
-          <li class="list__item"></li><a class="link" onclick="contact()" href="#contact">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main id="inner">
-    <section class="home" id="home">
-      <h2 class="home__head">¿Qué es Tecnosolidaria?</h2>
-      <article class="home__cont">
-        <p><strong class="home__cont--strong">Tecnosolidaria</strong> es una iniciativa que nace de la solidaridad. Tiene
-          como misión reacondicionar celulares, tablets y computadoras, y donarlos a niños y niñas que necesiten de
-          dispositivos tecnológicos para poder seguir estudiando. </p>
-        <h3 class="home__title">Contexto</h3>
-        <div class="home__sec">
-          <div class="home__sec--p">
-            <img class="home__sec--pic" src="img/reutilizacion.png" alt="reutilización"></img>
-            <p>El avance tecnológico y la oferta constante del mercado nos impulsan, por un lado, a la compra de
-            dispositivos con nuevas funciones y diseños, y por otro, a desechar los aparatos que estaban en uso. Esta
-            renovación de la tecnología trae aparejado un alarmante aumento de desechos eléctricos y electrónicos que se
-            producen cada año.</p>
-            <p>El principal problema con los Activos IT en desuso está en la basura y la contaminación que puede producir al
-            acumularse, dado que los Residuos de Aparatos Eléctricos y Electrónicos (RAEE's) contienen sustancias químicas
-            que contaminan el medio ambiente y al mezclarse con el resto de la basura, desprenden metales tóxicos
-            perjudiciales para la salud.</p>
-            <p>Atendiendo a esta cuestión, necesitamos concientizar a la población que los residuos electrónicos no son
-            basura y que, por el contrario, la reutilización es la alternativa indicada para recuperar los aparatos
-            eléctricos y electrónicos de una manera económica, técnica y ambientalmente más eficiente que el reciclaje.</p>
+    <main id="inner">
+      <section class="home" id="home">
+        <h2 class="home__head">¿Qué es Tecnosolidaria?</h2>
+        <article class="home__cont">
+          <p><strong class="home__cont--strong">Tecnosolidaria</strong> es una iniciativa que nace de la solidaridad.
+            Tiene
+            como misión reacondicionar celulares, tablets y computadoras, y donarlos a niños y niñas que necesiten de
+            dispositivos tecnológicos para poder seguir estudiando. </p>
+          <h3 class="home__subtitle">Contexto</h3>
+          <div class="home__sec">
+            <div class="home__sec--p">
+              <img class="home__sec--pic" src="img/reutilizacion.png" alt="reutilización"></img>
+              <p>El avance tecnológico y la oferta constante del mercado nos impulsan, por un lado, a la compra de
+                dispositivos con nuevas funciones y diseños, y por otro, a desechar los aparatos que estaban en uso.
+                Esta
+                renovación de la tecnología trae aparejado un alarmante aumento de desechos eléctricos y electrónicos
+                que
+                se
+                producen cada año.</p>
+              <p>El principal problema con los Activos IT en desuso está en la basura y la contaminación que puede
+                producir al
+                acumularse, dado que los Residuos de Aparatos Eléctricos y Electrónicos (RAEE's) contienen sustancias
+                químicas
+                que contaminan el medio ambiente y al mezclarse con el resto de la basura, desprenden metales tóxicos
+                perjudiciales para la salud.</p>
+              <p>Atendiendo a esta cuestión, necesitamos concientizar a la población que los residuos electrónicos no
+                son
+                basura y que, por el contrario, la reutilización es la alternativa indicada para recuperar los aparatos
+                eléctricos y electrónicos de una manera económica, técnica y ambientalmente más eficiente que el
+                reciclaje.</p>
+            </div>
           </div>
-        </div>
-      </article>
-    </section>
-  </main>
+        </article>
+      </section>
+    </main>
 
-  <footer class="footer">
-    <div class="social">
-      <a href="https://www.instagram.com/tecnosolidaria" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-      <a href="https://api.whatsapp.com/send?phone=543385436162" target="_blank"><i
-          class="fa-brands fa-whatsapp"></i></a>
-      <a href="https://github.com/santosbogo/tecnosolidaria" target="_blank"><i class="fa-brands fa-github"></i></a>
-    </div>
-    <div class="frase">“Los grandes cambios comienzan con las pequeñas cosas”</div>
-    <div class="copy">2021 -2022 | Copyright | Tecnosolidaria, todos los derechos reservados</div>
-  </footer>
-
+    <footer class="footer">
+      <div class="social">
+        <a href="https://www.instagram.com/tecnosolidaria" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=543385436162" target="_blank"><i
+            class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://github.com/santosbogo/tecnosolidaria" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </div>
+      <div class="frase">“Los grandes cambios comienzan con las pequeñas cosas”</div>
+      <div class="copy">2021 -2022 | Copyright | Tecnosolidaria, todos los derechos reservados</div>
+    </footer>
+  </div>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script src="js/script.js"></script>
-
 </body>
+
 </html>
