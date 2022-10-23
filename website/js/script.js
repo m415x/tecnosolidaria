@@ -35,11 +35,10 @@ function validarFormulario() {
       title: "ERROR",
       text: "Debes completar tu nombre",
       icon: "error",
-    })
-    .then((aceptar) => {
+    }).then((aceptar) => {
       if (aceptar) {
         document.form.firstname.focus();
-      } 
+      }
     });
     // alert("Debes completar tu nombre");
     // document.form.firstname.focus();
@@ -50,11 +49,10 @@ function validarFormulario() {
       title: "ERROR",
       text: "Debes completar tu apellido",
       icon: "error",
-    })
-    .then((aceptar) => {
+    }).then((aceptar) => {
       if (aceptar) {
         document.form.lastname.focus();
-      } 
+      }
     });
     // alert("Debes completar tu apellido");
     // document.form.lastname.focus();
@@ -66,11 +64,10 @@ function validarFormulario() {
       title: "ERROR",
       text: "Debes agregar una dirección de email",
       icon: "error",
-    })
-    .then((aceptar) => {
+    }).then((aceptar) => {
       if (aceptar) {
         document.form.email.focus();
-      } 
+      }
     });
     // alert("Debes agregar una dirección de email");
     // document.form.email.focus();
@@ -80,11 +77,10 @@ function validarFormulario() {
       title: "ADVERTENCIA",
       text: "Debes agregar formato de email válido",
       icon: "warning",
-    })
-    .then((aceptar) => {
+    }).then((aceptar) => {
       if (aceptar) {
         document.form.email.focus();
-      } 
+      }
     });
     // alert("Debes agregar una dirección de email válida");
     // document.form.email.focus();
@@ -98,11 +94,10 @@ function validarFormulario() {
         title: "ADVERTENCIA",
         text: "Debes agregar formato de teléfono válido",
         icon: "warning",
-      })
-      .then((aceptar) => {
+      }).then((aceptar) => {
         if (aceptar) {
           document.form.phonenumber.focus();
-        } 
+        }
       });
       // alert("Debes agregar un número de teléfono válido");
       // document.form.phonenumber.focus();
@@ -114,11 +109,10 @@ function validarFormulario() {
       title: "ADVERTENCIA",
       text: "El mensaje está vacío",
       icon: "warning",
-    })
-    .then((aceptar) => {
+    }).then((aceptar) => {
       if (aceptar) {
         document.form.message.focus();
-      } 
+      }
     });
     // alert("Debes escribir un mensaje");
     // document.form.message.focus();
@@ -128,11 +122,10 @@ function validarFormulario() {
     title: "FORMULARIO ENVIADO",
     text: "Muchas gracias por tu mensaje",
     icon: "success",
-  })
-  .then((aceptar) => {
+  }).then((aceptar) => {
     if (aceptar) {
       document.form.submit();
-    } 
+    }
   });
   // alert("Muchas gracias");
   // document.form.submit();
@@ -352,3 +345,22 @@ function contact() {
       </form>
     </section>`;
 }
+
+
+/**-----**/
+/** API **/
+/**-----**/
+
+// 'https://api.waqi.info/feed/here/?token=58a8c90c15e1f7397d19a2a0e7b4eddc6f6eb565'
+
+
+// var api = 'https://api.waqi.info/feed/here/?token=58a8c90c15e1f7397d19a2a0e7b4eddc6f6eb565'
+
+// const start = async function () {
+//   const jsondata = await fetch(api);
+//   const data = await response.json();
+//   return data;
+// }
+
+// const t = await start();
+// console.log(t)
