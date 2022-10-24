@@ -423,12 +423,12 @@ strong {
 .titulos {
   font-weight: bold;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-size: 50px;
 }
 .galeria-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(75px,275px));
+  grid-template-columns: repeat(auto-fit, minmax(75px,175px));
   grid-auto-rows: 1fr;
   justify-content: center;
   gap: 20px;
@@ -460,7 +460,7 @@ strong {
 } */
 .carousel-subtitulo {
   margin: 0;
-  color: #000;
+  color: #fff;
   display: inline;
   font-size: 50px;
   font-weight: 500;
@@ -468,9 +468,10 @@ strong {
 }
 .carousel-description {
   color: #fff;
-  margin: 7px 0;
+  margin: 10px 0;
+  padding: 10px;
   font-size: 50px;
-  font-weight: 600;
+  font-weight: 500;
   text-shadow: 2px 2px 1px rgba(0,0,0,0.7);
   margin-top: 0;
 }
