@@ -345,22 +345,3 @@ function contact() {
       </form>
     </section>`;
 }
-
-
-/**-----**/
-/** API **/
-/**-----**/
-
-// 'https://api.waqi.info/feed/here/?token=58a8c90c15e1f7397d19a2a0e7b4eddc6f6eb565'
-
-
-// var api = 'https://api.waqi.info/feed/here/?token=58a8c90c15e1f7397d19a2a0e7b4eddc6f6eb565'
-
-// const start = async function () {
-//   const jsondata = await fetch(api);
-//   const data = await response.json();
-//   return data;
-// }
-
-// const t = await start();
-// console.log(t)
