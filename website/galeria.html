@@ -15,120 +15,118 @@
     <title>Tecnosolidaria</title>
 </head>
 <body>
-    <div class="body-galeria">
-        <header>
-            <div class="header" id="header">
-              <img class="logo-img" src="./img/logo-vectorizado.svg" alt="Logo Tecnosolidaria">
-              <input type="checkbox" id="menu-check">
-              <label for="menu-check" id="menu">
-                <i class="fa-solid fa-bars" id="menu-abrir"></i>
-                <i class="fa-solid fa-xmark" id="menu-cerrar"></i>
-              </label>
-              <div id="app">
-                <div class="widget__cont">
-                  <h1 class="widget__cond">
-                    <span class="aqi" v-if="info.data.aqi < 50">BUENO</span>
-                    <span class="aqi" v-else-if="(info.data.aqi > 50) && (info.data.aqi <= 100)">MODERADO</span>
-                    <span class="aqi" v-else-if="(info.data.aqi > 100) && (info.data.aqi <= 150)">INSALUBRE PARA GRUPOS
-                      SENSIBLES</span>
-                    <span class="aqi" v-else-if="(info.data.aqi > 150) && (info.data.aqi <= 200)">INSALUBRE</span>
-                    <span class="aqi" v-else="info.data.aqi > 200">PELIGROSO</span>
-                  </h1>
-                  <h1 class="widget__aqi">{{info.data.aqi}}<span id="ica"> ICA</span></h1>
-                  <h1 class="widget__head">Calidad del Aire</h1>
-                  <h1 class="widget__loc"><i class="material-icons locationIcon">place</i> {{info.data.city.name}}</h1>
-                </div>
-              </div>
-              <nav class="menubar" id="menubar">
-                <ul class="menu__list">
-                  <li class="list__item"><a class="link" onclick="home()" href="index.html#home">Inicio</a></li>
-                  <li class="list__item"><a class="link" onclick="carousel()" href="galeria.html">Fotos</a></li>
-                  <li class="list__item"><a class="link" onclick="about()" href="index.html#about">Quienes somos</a></li>
-                  <li class="list__item"><a class="link" onclick="donate()" href="index.html#donate">Donaciones</a></li>
-                  <li class="list__item"><a class="link" onclick="points()" href="index.html#points">Puntos de entrega</a></li>
-                  <li class="list__item"><a class="link" onclick="contact()" href="index.html#contact">Contacto</a></li>
-                </ul>
-              </nav>
-            </div>
-          </header>
-
-          <section class="galeria">
-            <h1 class="titulos">Nosotros</h1>
-            <p class="textos">Hola. Mira algunas fotos de nuestro trabajo, si te gusta lo que hacemos recorda que podes seguirnos en nuestras redes o colaborar con nosotros.<br /> Una mano amiga y unos mates, siempre son bienvedidos!</p>
-            <div class="galeria-grid">
-                <video class="galeria-item galeria-item__big" src="./img/TecnoSolidaria_video-01.mp4" autoplay controls></video>
-                <img class="galeria-item" src="./img/TecnoSolidaria-01.jpg" alt="Hombre reparando computadoras 1">
-                <img class="galeria-item" src="./img/TecnoSolidaria-02.jpg" alt="Hombre reparando computadoras 2">
-                <img class="galeria-item" src="./img/TecnoSolidaria-03.jpg" alt="Hombre y nena reparando celular">
-                <img class="galeria-item" src="./img/TecnoSolidaria-04.jpg" alt="Dos hombre tomandose una foto despues de entregar computadoras">
-                <img class="galeria-item" src="./img/TecnoSolidaria-05.jpg" alt="Mesa de trabajo, dos hombre reparando notebooks">
-                <img class="galeria-item" src="./img/TecnoSolidaria-06.jpg" alt="Hombre y mujer tomandose una foto, despues de entregar notebooks e impresora">
-          </section> 
-
-          <section class="carousel-section">
-            <div class="container">
-              <div class="carousel-row">
-                  <div class="carousel-col-s12">
-                      <h1 class="titulos">Nuestra Vision</h1>
-                      <p class="textos">Te dejamos nuestros VALORES, PRINCIPIOS y CONVICCIONES. Por lo que trabajamos y luchamos todos los dias</p>
-      
-                      <div class="carousel">
-                          <div class="carousel-item">
-                              <h3 class="carousel-subtitulo">Juntos</h3>
-                              <div class="linea-division"></div>
-                              <p class="carousel-description">trabajamos</p>
-                              <img src="./img/TecnoSolidaria_carousel-01.jpg" alt="">
-                          </div>
-      
-                          <div class="carousel-item">
-                              <h3 class="carousel-subtitulo">Reutilizamos</h3>
-                              <div class="linea-division"></div>
-                              <p class="carousel-description">y reparamos</p>
-                              <img src="./img/TecnoSolidaria_carousel-02.jpg" alt="">
-                          </div>
-      
-                          <div class="carousel-item">
-                              <h3 class="carousel-subtitulo">Colaboramos</h3>
-                              <div class="linea-division"></div>
-                              <p class="carousel-description">en comunidad</p>
-                              <img src="./img/TecnoSolidaria_carousel-03.jpg" alt="">
-                          </div>
-      
-                          <div class="carousel-item">
-                              <h3 class="carousel-subtitulo">Presente</h3>
-                              <div class="linea-division"></div>
-                              <p class="carousel-description">y futuro</p>
-                              <img src="./img/TecnoSolidaria_carousel-04.jpg" alt="">
-                          </div>
-      
-                          <div class="carousel-item">
-                              <h3 class="carousel-subtitulo">Tecnologia</h3>
-                              <div class="linea-division"></div>
-                              <p class="carousel-description">como medio</p>
-                              <img src="./img/TecnoSolidaria_carousel-05.jpg" alt="">
-                          </div>
-                      </div>
-                  </div>
-              </div>
+  <div class="body-galeria">
+    <header>
+      <div class="header" id="header">
+        <img class="logo-img" src="img/logo-vectorizado.svg" alt="Logo Tecnosolidaria">
+        <input type="checkbox" id="menu-check">
+        <label for="menu-check" id="menu">
+          <i class="fa-solid fa-bars" id="menu-abrir"></i>
+          <i class="fa-solid fa-xmark" id="menu-cerrar"></i>
+        </label>
+        <div id="app">
+          <div class="widget__cont">
+            <h1 class="widget__cond">
+              <span class="aqi" v-if="info.data.aqi < 50">BUENO</span>
+              <span class="aqi" v-else-if="(info.data.aqi > 50) && (info.data.aqi <= 100)">MODERADO</span>
+              <span class="aqi" v-else-if="(info.data.aqi > 100) && (info.data.aqi <= 150)">INSALUBRE PARA GRUPOS
+                SENSIBLES</span>
+              <span class="aqi" v-else-if="(info.data.aqi > 150) && (info.data.aqi <= 200)">INSALUBRE</span>
+              <span class="aqi" v-else="info.data.aqi > 200">PELIGROSO</span>
+            </h1>
+            <h1 class="widget__aqi">{{info.data.aqi}}<span id="ica"> ICA</span></h1>
+            <h1 class="widget__head">Calidad del Aire</h1>
+            <h1 class="widget__loc"><i class="material-icons locationIcon">place</i> {{info.data.city.name}}</h1>
           </div>
-          </section>
+        </div>
+        <nav class="menubar" id="menubar">
+          <ul class="menu__list">
+            <li class="list__item"><a class="link" onclick="home()" href="index.html#home">Inicio</a></li>
+            <li class="list__item"><a class="link" onclick="carousel()" href="galeria.html">Fotos</a></li>
+            <li class="list__item"><a class="link" onclick="about()" href="index.html#about">Quienes somos</a></li>
+            <li class="list__item"><a class="link" onclick="donate()" href="index.html#donate">Donaciones</a></li>
+            <li class="list__item"><a class="link" onclick="points()" href="index.html#points">Puntos de entrega</a></li>
+            <li class="list__item"><a class="link" onclick="contact()" href="index.html#contact">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-          <footer class="footer">
-            <div class="social">
-              <a href="https://www.instagram.com/tecnosolidaria" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-              <a href="https://api.whatsapp.com/send?phone=543385436162" target="_blank"><i
-                  class="fa-brands fa-whatsapp"></i></a>
-              <a href="https://github.com/santosbogo/tecnosolidaria" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <section class="galeria">
+      <h1>Nosotros</h1>
+      <p class="textos">Hola! Mira algunas fotos de nuestro trabajo, si te gusta lo que hacemos recordá que podés seguirnos en nuestras redes o colaborar con nosotros. <br><b>¡Una mano amiga y unos mates, siempre son bienvenidos!</b> </p>
+      <div class="galeria-grid">
+          <video class="galeria-item galeria-item__big" src="./img/TecnoSolidaria_video-01.mp4" autoplay controls></video>
+          <img class="galeria-item" src="./img/TecnoSolidaria-01.jpg" alt="Hombre reparando computadoras 1">
+          <img class="galeria-item" src="./img/TecnoSolidaria-02.jpg" alt="Hombre reparando computadoras 2">
+          <img class="galeria-item" src="./img/TecnoSolidaria-03.jpg" alt="Hombre y nena reparando celular">
+          <img class="galeria-item" src="./img/TecnoSolidaria-04.jpg" alt="Dos hombre tomandose una foto despues de entregar computadoras">
+          <img class="galeria-item" src="./img/TecnoSolidaria-05.jpg" alt="Mesa de trabajo, dos hombre reparando notebooks">
+          <img class="galeria-item" src="./img/TecnoSolidaria-06.jpg" alt="Hombre y mujer tomandose una foto, despues de entregar notebooks e impresora">
+    </section>
+    <section class="carousel-section">
+      <div class="container">
+        <div class="carousel-row">
+            <div class="carousel-col-s12">
+                <h2 class="segtit">Nuestra Vision</h2>
+                <p class="textos">Te dejamos nuestros <b>VALORES, PRINCIPIOS y CONVICCIONES,</b> <br> por lo que trabajamos y luchamos todos los dias</p>
+                <div class="carousel">
+                    <div class="carousel-item">
+                        <h3 class="carousel-subtitulo">Juntos</h3>
+                        <div class="linea-division"></div>
+                        <p class="carousel-description">trabajamos</p>
+                        <img src="./img/TecnoSolidaria_carousel-01.jpg" alt="">
+                    </div>
+
+                    <div class="carousel-item">
+                        <h3 class="carousel-subtitulo">Reutilizamos</h3>
+                        <div class="linea-division"></div>
+                        <p class="carousel-description">y reparamos</p>
+                        <img src="./img/TecnoSolidaria_carousel-02.jpg" alt="">
+                    </div>
+
+                    <div class="carousel-item">
+                        <h3 class="carousel-subtitulo">Colaboramos</h3>
+                        <div class="linea-division"></div>
+                        <p class="carousel-description">en comunidad</p>
+                        <img src="./img/TecnoSolidaria_carousel-03.jpg" alt="">
+                    </div>
+
+                    <div class="carousel-item">
+                        <h3 class="carousel-subtitulo">Presente</h3>
+                        <div class="linea-division"></div>
+                        <p class="carousel-description">y futuro</p>
+                        <img src="./img/TecnoSolidaria_carousel-04.jpg" alt="">
+                    </div>
+
+                    <div class="carousel-item">
+                        <h3 class="carousel-subtitulo">Tecnologia</h3>
+                        <div class="linea-division"></div>
+                        <p class="carousel-description">como medio</p>
+                        <img src="./img/TecnoSolidaria_carousel-05.jpg" alt="">
+                    </div>
+                </div>
             </div>
-            <div class="frase">“Los grandes cambios comienzan con las pequeñas cosas”</div>
-            <div class="copy">2021 -2022 | Copyright | Tecnosolidaria, todos los derechos reservados</div>
-          </footer>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/api.js"></script>
+    </section>
+
+    <footer class="footer">
+      <div class="social">
+        <a href="https://www.instagram.com/tecnosolidaria" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=543385436162" target="_blank"><i
+            class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://github.com/santosbogo/tecnosolidaria" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </div>
+      <div class="frase">“Los grandes cambios comienzan con las pequeñas cosas”</div>
+      <div class="copy">2021 -2022 | Copyright | Tecnosolidaria, todos los derechos reservados</div>
+    </footer>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/api.js"></script>
 </body>
 </html>
