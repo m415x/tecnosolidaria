@@ -178,32 +178,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function home() {
   document.querySelector("#inner").innerHTML = `
-    <section class="home" id="home">
-      <h2 class="home__head">¿Qué es Tecnosolidaria?</h2>
-      <article class="home__cont">
-        <p><strong class="home__cont--strong">Tecnosolidaria</strong> es una iniciativa que nace de la solidaridad. Tiene
-          como mision reacondicionar celulares, tablets y computadoras, y donarlos a niños y niñas que necesiten de
-          dispositivos tecnológicos para poder seguir estudiando. </p>
-        <h3 class="home__subtitle">Contexto</h3>
-        <div class="home__sec">
-          <div class="home__sec--p">
-            <img class="home__sec--pic" src="img/reutilizacion.png" alt="reutilización"></img>
-            <p>El avance tecnológico y la oferta constante del mercado nos impulsan, por un lado, a la compra de
-              dispositivos con nuevas funciones y diseños, y por otro, a desechar los aparatos que estaban en uso. Esta
-              renovación de la tecnología trae aparejado un alarmante aumento de desechos eléctricos y electrónicos que se
-              producen cada año.</p>
-            <p>El principal problema con los Activos IT en desuso está en la basura y la contaminación que puede producir al
-              acumularse, dado que los Residuos de Aparatos Eléctricos y Electrónicos (RAEE's) contienen sustancias químicas
-              que contaminan el medio ambiente y al mezclarse con el resto de la basura, desprenden metales tóxicos
-              perjudiciales para la salud.</p>
-            <p>Atendiendo a esta cuestión, necesitamos concientizar a la población que los residuos electrónicos no son
-              basura y que, por el contrario, la reutilización es la alternativa indicada para recuperar los aparatos
-              eléctricos y electrónicos de una manera económica, técnica y ambientalmente más eficiente que el reciclaje.
-            </p>
-          </div>
-        </div>
-      </article>
-    </section>`;
+  <section class="home" id="home">
+    <h2 class="home__head">¿Qué es Tecnosolidaria?</h2>
+    <article class="home__cont">
+      <p><strong class="home__cont--strong">Tecnosolidaria</strong> es una iniciativa que nace de la solidaridad.
+        Tiene
+        como misión reacondicionar celulares, tablets y computadoras, y donarlos a niños y niñas que necesiten de
+        dispositivos tecnológicos para poder seguir estudiando. </p>
+      <h3 class="home__subtitle">¿Quiénes somos?</h3>
+      <p class="home__subtitle_p" >Mi nombre es Santos Bogo. Soy estudiante de ingeniería electrónica y cuento con conocimientos y experiencia en
+        reparación de celulares y computadoras. Estoy iniciando un proyecto que tiene como objetivo ayudar a aquellas
+        personas que necesitan equipos electrónicos, pero no tienen los recursos necesarios para adquirirlos... Por eso,
+        si tenés computadoras, celulares o tablets que ya no uses o estén rotos, podés colaborar con este proyecto y
+        contactarte con nosotros. Luego de repararlos y dejarlos en las mejores condiciones posibles, les encontraremos
+        un nuevo dueño. Todos podemos colaborar poniendo nuestro granito de arena. Aceptamos todo tipo de donaciones.
+      </p>
+    </article>
+    <img class="manos" src="./img/manosLevantadas.png" alt="manosLevantadas">
+  </section>`;
 }
 
 // function carousel() {
@@ -258,18 +250,69 @@ function home() {
 
 function about() {
   document.querySelector("#inner").innerHTML = `
-    <section class="about" id="about">
-      <h2 class="about__head">¿Quiénes somos?</h2>
-      <article class="about__cont">
-        <p>Mi nombre es Santos Bogo. Soy estudiante de ingeniería electrónica y cuento con conocimientos y experiencia en
-          reparación de celulares y computadoras. Estoy iniciando un proyecto que tiene como objetivo ayudar a aquellas
-          personas que necesitan equipos electrónicos, pero no tienen los recursos necesarios para adquirirlos... Por eso,
-          si tenés computadoras, celulares o tablets que ya no uses o estén rotos, podés colaborar con este proyecto y
-          contactarte con nosotros. Luego de repararlos y dejarlos en las mejores condiciones posibles, les encontraremos
-          un nuevo dueño. Todos podemos colaborar poniendo nuestro granito de arena. Aceptamos todo tipo de donaciones.
-        </p>
-      </article>
-    </section>`;
+  <section class="about" id="about">
+  <h2 class="home__head">Contexto</h2>
+  <div class="home__sec">
+    <div class="home__sec--p">
+      <img class="home__sec--pic" src="img/Reutilizacion.png" alt="reutilización"></img>
+      <p>El avance tecnológico y la oferta constante del mercado nos impulsan, por un lado, a la compra de
+      dispositivos con nuevas funciones y diseños, y por otro, a desechar los aparatos que estaban en uso. 
+      Esta
+      renovación de la tecnología trae aparejado un alarmante aumento de desechos eléctricos y electrónicos
+      que
+      se
+      producen cada año. <br><br>
+      El principal problema con los Activos IT en desuso está en la basura y la contaminación que puede
+      producir al
+      acumularse, dado que los Residuos de Aparatos Eléctricos y Electrónicos (RAEE's) contienen sustancias
+      químicas
+      que contaminan el medio ambiente y al mezclarse con el resto de la basura, desprenden metales tóxicos
+      perjudiciales para la salud.<br><br>
+      Atendiendo a esta cuestión, necesitamos concientizar a la población que los residuos electrónicos no
+      son
+      basura y que, por el contrario, la reutilización es la alternativa indicada para recuperar los aparatos
+      eléctricos y electrónicos de una manera económica, técnica y ambientalmente más eficiente que el
+      reciclaje.</p>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <h2 class="tit-curiosidades">La huella de carbono digital</h2>
+  <div class="home__sec">
+    <div class="home__sec--p2">
+      <iframe class="home__sec--pic2" src="https://www.youtube.com/embed/Oe0lBRdKh_Y" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <p>
+      El cálculo de la huella de carbono es una herramienta que nos permite conocer el volumen de gases de efecto invernadero que produce una actividad o servicio. Se mide en toneladas de CO2 emitidas y es esencial para poner en marcha iniciativas que nos permitan reducirla. <br><br>
+
+      El consumo de energía por el uso de las TIC (Tecnologías de la Información y de la
+      Comunicación) está avanzando de forma exponencial a nivel mundial, sus emisiones de CO2 se
+      aproximan a las del sector de la aviación. Prácticas como olvidar los cargadores de batería
+      enchufados a la red eléctrica, no cerrar las aplicaciones, mantener los salvapantallas activos o
+      dejar activado permanentemente el Wi-Fi o el Bluetooth contribuyen a disminuir la vida útil de la
+      batería de nuestros equipos y a consumir energía innecesariamente. <br><br>
+
+      La basura tecnológica comienza a ser un grave problema. En la Unión Europea se dejan de utilizar
+      al año más de 100 millones de teléfonos móviles; en nuestras casas se acumulan móviles y
+      cargadores de batería que no se utilizan, pero se desconoce algo sorprendente: albergan materias
+      primas valiosas como el oro, la plata o el cobre, y al mismo tiempo contienen sustancias altamente
+      tóxicas (plomo, cadmio, compuestos bromados, etc.) que requieren normas para un reciclaje
+      seguro. 
+      </p>
+    
+    <div class="granito">
+      <h2 class="tit-curiosidades">Nuestro granito de arena</h2>
+      <p class="textogranito">
+      Acercá tus residuos electrónicos y nosotros lo reacondicionamos para una nueva utilización.<br>
+      Juntos podemos ayudar a cuidar el medioambiente y a acortar la brecha de desigualdad en el acceso a las tecnologías e información.
+      </p>
+    </div>
+    <div class="huella">
+      <img class="huellaimg" src="img/huella.jpg" alt="huella"></img>
+    </div>
+  </article>
+</section>`;
 }
 
 function donate() {
