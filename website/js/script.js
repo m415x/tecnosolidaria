@@ -14,6 +14,30 @@ window.onscroll = function () {
   ubicacionPrincipal = desplazamiento;
 };
 
+//Menu hamburguesa
+$(document).ready(function () {
+  $(document).delegate('.open', 'click', function (event) {
+    $(this).addClass('oppenned');
+    $('.widget__cont').show();
+    event.stopPropagation();
+  })
+  $(document).delegate('body', 'click', function (event) {
+    $('.open').removeClass('oppenned');
+    $('.widget__cont').hide()
+  })
+  $(document).delegate('.cls', 'click', function (event) {
+    $('.open').removeClass('oppenned');
+    $('.widget__cont').hide();
+    event.stopPropagation();
+  });
+});
+
+var mostrarWidget = document.querySelector("oppenned");
+if (mostrarWidget == true) {
+  document.querySelector("widget__cont").style.display = "";
+} else {
+  document.querySelector("#widget__cont").style.display = "none";
+}
 /*--------------------------*/
 /** FORMULARIO DE CONTACTO **/
 /*--------------------------*/

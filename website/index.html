@@ -7,7 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="shortcut icon" href="img/mano-tecnosolidaria.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/normalize.css">
-  <!-- <link rel="stylesheet" href="css/materialize.min.css"> -->
   <link rel="stylesheet" href="css/style.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
@@ -15,7 +14,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="https://kit.fontawesome.com/452988f36c.js" crossorigin="anonymous"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
   <title>Tecnosolidaria</title>
 </head>
 
@@ -24,11 +22,8 @@
     <header>
       <div class="header" id="header">
         <img class="logo-img" src="img/logo-vectorizado.svg" alt="Logo Tecnosolidaria">
-        <input type="checkbox" id="menu-check">
-        <label for="menu-check" id="menu">
-          <i class="fa-solid fa-bars" id="menu-abrir"></i>
-          <i class="fa-solid fa-xmark" id="menu-cerrar"></i>
-        </label>
+
+
         <div id="app">
           <div class="widget__cont">
             <h1 class="widget__cond">
@@ -43,17 +38,23 @@
             <h1 class="widget__head">Calidad del Aire</h1>
             <h1 class="widget__loc"><i class="material-icons locationIcon">place</i> {{info.data.city.name}}</h1>
           </div>
+        
+
+          <nav class="open menubar" id="menubar">
+            <span class="cls"></span>
+            <span>
+              <ul class="sub-menu menu__lis">
+                <li class="list__item"><a class="link" onclick="home()" href="#home">Inicio</a></li>
+                <li class="list__item"><a class="link" href="galeria.html">Fotos</a></li>
+                <li class="list__item"><a class="link" onclick="about()" href="#about">Quienes somos</a></li>
+                <li class="list__item"><a class="link" onclick="donate()" href="#donate">Donaciones</a></li>
+                <li class="list__item"><a class="link" onclick="points()" href="#points">Puntos de entrega</a></li>
+                <li class="list__item"><a class="link" onclick="contact()" href="#contact">Contacto</a></li>
+              </ul>
+            </span>
+            <span class="cls"></span>
+          </nav>
         </div>
-        <nav class="menubar" id="menubar">
-          <ul class="menu__list">
-            <li class="list__item"><a class="link" onclick="home()" href="#home">Inicio</a></li>
-            <li class="list__item"><a class="link" onclick="carousel()" href="galeria.html">Fotos</a></li>
-            <li class="list__item"><a class="link" onclick="about()" href="#about">Quienes somos</a></li>
-            <li class="list__item"><a class="link" onclick="donate()" href="#donate">Donaciones</a></li>
-            <li class="list__item"><a class="link" onclick="points()" href="#points">Puntos de entrega</a></li>
-            <li class="list__item"><a class="link" onclick="contact()" href="#contact">Contacto</a></li>
-          </ul>
-        </nav>
       </div>
     </header>
 
@@ -104,11 +105,14 @@
       <div class="copy">2021 -2022 | Copyright | Tecnosolidaria, todos los derechos reservados</div>
     </footer>
   </div>
-
+  
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/script.js"></script>
-  <script src="js/api.js"></script>
+  <script src="js/api.js"></scrip>
 </body>
 
 </html>
