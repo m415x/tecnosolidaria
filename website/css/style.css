@@ -714,7 +714,7 @@ strong {
 .carousel-section {
   margin: 15px 0px;
 }
-.segtit {
+.carousel-titulo {
   font-style: normal;
   font-weight: 500;
   font-size: 30px;
@@ -860,8 +860,122 @@ strong {
 .donate__head {
   margin-bottom: 2em;
 }
-
-/**-------------------**/
+.donate__cont p {
+  font-family: Roboto, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
+  margin: 0 100px 50px 100px;
+  padding: 0 30px;
+  text-align: center;
+  font-size: large;
+  margin-bottom: 30px;
+}
+.donate__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 95%;
+  min-height: 250px;
+  margin: 15px;
+}
+.donate__item {
+  border: 2px solid white;
+  width: 45%;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 30px;
+}
+.donate__item-titulo {
+    background: linear-gradient(45deg, var(--blanco) 0%, var(--naranja) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 15px;
+    font-style: normal;
+    font-weight: 500;
+}
+.donate__list {
+    text-align: center;
+}
+.donate__item:hover {
+    background: linear-gradient(45deg, var(--naranja) 0%, var(--azul) 100%);
+    color: var(--negro);
+    -webkit-animation: donate__item-animation 1s ease;
+    animation: donate__item-animation 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    box-shadow: 5px 5px 7px var(--turquesa);
+}
+.donate__list li {
+    list-style: none;
+    font-weight: 400;
+    margin: 15px;
+    
+}
+@-webkit-keyframes donate__item-animation{
+  15%
+  {
+  -webkit-transform: translateX(5px);
+  transform: translateX(5px);
+  }
+  30%
+  {
+  -webkit-transform: translateX(-5px);
+  transform: translateX(-5px);
+  }
+  50%
+  {
+  -webkit-transform: translateX(3px);
+  transform: translateX(3px);
+  }
+  65%
+  {
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+  }
+  80%
+  {
+  -webkit-transform: translateX(2px);
+  transform: translateX(2px);
+  }
+  100%
+  {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+}
+@keyframes donate__item-animation {
+  15%
+  {
+  -webkit-transform: translateX(5px);
+  transform: translateX(5px);
+  }
+  30%
+  {
+  -webkit-transform: translateX(-5px);
+  transform: translateX(-5px);
+  }
+  50%
+  {
+  -webkit-transform: translateX(3px);
+  transform: translateX(3px);
+  }
+  65%
+  {
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+  }
+  80%
+  {
+  -webkit-transform: translateX(2px);
+  transform: translateX(2px);
+  }
+  100%
+  {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+}
+ 
+  /**-------------------**/
 /** PUNTOS DE ENTREGA **/
 /**-------------------**/
 

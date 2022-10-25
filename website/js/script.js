@@ -206,55 +206,55 @@ function home() {
     </section>`;
 }
 
-function carousel() {
-  document.querySelector("#inner").innerHTML = `
-    <section class="carousel-area" id="carousel">
-      <div class="container">
-        <div class="row">
-          <div class="col s12">
-            <h2>Nuestra vision en Fotos!</h2>
+// function carousel() {
+//   document.querySelector("#inner").innerHTML = `
+//     <section class="carousel-area" id="carousel">
+//       <div class="container">
+//         <div class="row">
+//           <div class="col s12">
+//             <h2>Nuestra vision en Fotos!</h2>
 
-            <div class="carousel center-align">
-              <div class="carousel-item">
-                <h2 class="carousel-subtitulo">Trabajamos</h2>
-                <div class="carousel-line-div"></div>
-                <p class="carousel-texto">y ayudamos</p>
-                <img src="./img/TecnoSolidaria-01.jpg" alt="Persona trajando en computadora">
-              </div>
+//             <div class="carousel center-align">
+//               <div class="carousel-item">
+//                 <h2 class="carousel-subtitulo">Trabajamos</h2>
+//                 <div class="carousel-line-div"></div>
+//                 <p class="carousel-texto">y ayudamos</p>
+//                 <img src="./img/TecnoSolidaria-01.jpg" alt="Persona trajando en computadora">
+//               </div>
 
-              <div class="carousel-item">
-                <h2 class="carousel-subtitulo">Reparamos</h2>
-                <div class="carousel-line-div"></div>
-                <p class="carousel-texto">y reutilizamos</p>
-                <img src="./img/TecnoSolidaria-02.jpg" alt="Persona reparando computadoras de escritorio">
-              </div>
+//               <div class="carousel-item">
+//                 <h2 class="carousel-subtitulo">Reparamos</h2>
+//                 <div class="carousel-line-div"></div>
+//                 <p class="carousel-texto">y reutilizamos</p>
+//                 <img src="./img/TecnoSolidaria-02.jpg" alt="Persona reparando computadoras de escritorio">
+//               </div>
 
-              <div class="carousel-item">
-                <h2 class="carousel-subtitulo">Por nosotros</h2>
-                <div class="carousel-line-div"></div>
-                <p class="carousel-texto">y nuestro futuro</p>
-                <img src="./img/TecnoSolidaria-03.jpg" alt="Un hombre y una nena reparando dispositivos electronicos">
-              </div>
+//               <div class="carousel-item">
+//                 <h2 class="carousel-subtitulo">Por nosotros</h2>
+//                 <div class="carousel-line-div"></div>
+//                 <p class="carousel-texto">y nuestro futuro</p>
+//                 <img src="./img/TecnoSolidaria-03.jpg" alt="Un hombre y una nena reparando dispositivos electronicos">
+//               </div>
 
-              <div class="carousel-item">
-                <h2 class="carousel-subtitulo">Acortando</h2>
-                <div class="carousel-line-div"></div>
-                <p class="carousel-texto">brechas</p>
-                <img src="./img/TecnoSolidaria-04.jpg" alt="Dos personas tomandose una foto">
-              </div>
+//               <div class="carousel-item">
+//                 <h2 class="carousel-subtitulo">Acortando</h2>
+//                 <div class="carousel-line-div"></div>
+//                 <p class="carousel-texto">brechas</p>
+//                 <img src="./img/TecnoSolidaria-04.jpg" alt="Dos personas tomandose una foto">
+//               </div>
 
-              <div class="carousel-item">
-                <h2 class="carousel-subtitulo">Juntos</h2>
-                <div class="carousel-line-div"></div>
-                <p class="carousel-texto">somos mas</p>
-                <img src="./img/TecnoSolidaria-05.jpg" alt="Manos juntas formando un circulo">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>`;
-}
+//               <div class="carousel-item">
+//                 <h2 class="carousel-subtitulo">Juntos</h2>
+//                 <div class="carousel-line-div"></div>
+//                 <p class="carousel-texto">somos mas</p>
+//                 <img src="./img/TecnoSolidaria-05.jpg" alt="Manos juntas formando un circulo">
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </section>`;
+// }
 
 function about() {
   document.querySelector("#inner").innerHTML = `
@@ -277,33 +277,32 @@ function donate() {
     <section class="donate" id="donate">
       <h2 class="donate__head">Donaciones</h2>
       <article class="donate__cont">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis ullam facere recusandae itaque dolorem nihil
-          incidunt impedit magnam nesciunt, quo molestiae ipsa? Praesentium aperiam accusantium at iste similique. Fugiat
-          ad esse quam tempora, sapiente corrupti. Veritatis labore aut ipsam eaque doloremque veniam, pariatur officia
-          perferendis a animi soluta ducimus amet.</p>
+      <p>Si te interesa nuestra propuesta y queres ayudarnos <b>BIENVENIDO SEAS.</b>
+      Podes ayudarnos acercandote a nuestros centros de recepcion, donde nos encontraras trabajando y con un mate listo para compartir. <br />
+      Si preferis colaborar desde otro lado, aportando a nuestro proyecto, tambien lo podes hacer! <br />
+      Te dejamos lo tipos de donaciones que recibimos y no te olvides de seguirnos en nuestras redes o contactarnos a traves de nuestro formulario
+      por cualquier duda</p>
       </article>
       <div class="donate__container">
         <div class="donate__item">
           <h3 class="donate__item-titulo">Celulares y Repuestos</h3>
           <ul class="donate__list">
-            <li class="donate__list-item">Computadoras y/o notebook rotas o viejas</li>
-            <li class="donate__list-item">Celulares y/o tablets rotas o en des uso</li>
-            <li class="donate__list-item">Componentes internos de computadoras, notebooks, celulares o tablets (motherboard, camaras, transitores, fuentes etc)</li>
-            <li class="donate__list-item">Componentes cambiados en una reparacion</li>
-            <li class="donate__list-item">Perifericos de computadoras, notebooks, celulares, o tablets (cargadores, auriculares, parlantes, impresoras, teclados, mouses)</li>
+            <li>Computadoras y/o notebook rotos o en desuso</li>
+            <li>Celulares y/o tablets rotos o en desuso</li>
+            <li>Componentes internos de computadoras, notebooks, celulares o tablets (motherboard, camaras, transitores, fuentes etc)</li>
+            <li>Componentes cambiados en una reparacion de servicio tecnico oficial</li>
+            <li>Perifericos de computadoras, notebooks, celulares, o tablets (cargadores, auriculares, parlantes, impresoras, teclados, mouses)</li>
           </ul>
-          <a class="donate__btn" href="#contact">Quiero Donar!</a>
         </div>
           
         <div class="donate__item">
           <h3 class="donate__item-titulo">Donaciones de dinero</h3>
           <ul class="donate__list">
-            <li class="donate__list-item">Cuenta Bancaria</li>
-            <li class="donate__list-item">Mercado Pago</li>
-            <li class="donate__list-item">PayPal</li>
-            <li class="donate__list-item">Wester Union</li>
+            <li>Cuenta Bancaria del BNA (Banco Nacion)</li>
+            <li>Mercado Pago</li>
+            <li>PayPal</li>
+            <li>Wester Union</li>
           </ul>
-          <a class="donate__btn" href="#contact">Quiero Donar!</a>
         </div>
       </div>
     </section>`;
