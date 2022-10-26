@@ -148,7 +148,7 @@
     overflow: hidden;
     /* display: none; */
     z-index: 9001;
-    position: fixed;
+    position: absolute;
     top: 83px;
     left: 25px;
     /* margin: 0px 25px; */
@@ -171,7 +171,7 @@
     font-weight: 300;
     font-size: 7px;
     left: 110px;
-    top: 3px;
+    top: 2.7px;
     /* display: none; */
   }
   
@@ -182,7 +182,7 @@
     font-size: 10px;
     font-weight: 300;
     left: 75px;
-    bottom: 1px;
+    bottom: .6px;
   }
   
   #ica {
@@ -199,7 +199,7 @@
     font-size: 8px;
     font-weight: 300;
     left: 10px;
-    /* top: 10px; */
+    top: 1.5px;
   }
   
   .locationIcon {
