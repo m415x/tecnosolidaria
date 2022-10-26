@@ -23,7 +23,6 @@
       <div class="header" id="header">
         <img class="logo-img" src="img/logo-vectorizado.svg" alt="Logo Tecnosolidaria">
 
-
         <div id="app">
           <div class="widget__cont">
             <h1 class="widget__cond">
@@ -38,17 +37,21 @@
             <h1 class="widget__head">Calidad del Aire</h1>
             <h1 class="widget__loc"><i class="material-icons locationIcon">place</i> {{info.data.city.name}}</h1>
           </div>
-        
+        </div>
 
-          <nav class="menubar" id="menubar">
-          <ul class="menu__list">
-            <li class="list__item"><a class="link" onclick="home()" href="#home">Inicio</a></li>
-            <li class="list__item"><a class="link" onclick="about()" href="#about">Quienes somos</a></li>
-            <li class="list__item"><a class="link" href="galeria.html">Fotos</a></li>
-            <li class="list__item"><a class="link" onclick="donate()" href="#donate">Donaciones</a></li>
-            <li class="list__item"><a class="link" onclick="points()" href="#points">Puntos de entrega</a></li>
-            <li class="list__item"><a class="link" onclick="contact()" href="#contact">Contacto</a></li>
-          </ul>
+          <nav class="open menubar" id="menubar">
+            <span class="cls"></span>
+            <span>
+              <ul class="sub-menu menu__lis">
+                <li class="list__item"><a class="link" onclick="home()" href="#home">Inicio</a></li>
+                <li class="list__item"><a class="link" href="galeria.html">Fotos</a></li>
+                <li class="list__item"><a class="link" onclick="about()" href="#about">Quienes somos</a></li>
+                <li class="list__item"><a class="link" onclick="donate()" href="#donate">Donaciones</a></li>
+                <li class="list__item"><a class="link" onclick="points()" href="#points">Puntos de entrega</a></li>
+                <li class="list__item"><a class="link" onclick="contact()" href="#contact">Contacto</a></li>
+              </ul>
+            </span>
+            <span class="cls"></span>
           </nav>
       </div>
     </header>
@@ -103,9 +106,7 @@
   
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
-    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/script.js"></script>
   <script src="js/api.js"></script>
 </body>
